@@ -1,0 +1,47 @@
+﻿@model BOCS.ModelsView.LessonCreateVM
+@{
+    ViewData["Title"] = "Add Lesson";
+    var courseTitle = (string?)ViewBag.CourseTitle ?? "Course";
+}
+<section class="container py-4">
+    <h4 class="mb-3">Add lesson to: @courseTitle</h4>
+
+    <form asp-action="CreateLesson" asp-route-courseId="@Model.CourseId" method="post" class="row g-3" novalidate>
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="CourseId" />
+
+        <div class="col-12">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" placeholder="Datatype and Type Conversion" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <label asp-for="YoutubeUrlOrId" class="form-label"></label>
+            <input asp-for="YoutubeUrlOrId" class="form-control"
+                   placeholder="https://youtu.be/0WUbhKIYXbo or 0WUbhKIYXbo" />
+            <span asp-validation-for="YoutubeUrlOrId" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="SortOrder" class="form-label"></label>
+            <input asp-for="SortOrder" type="number" class="form-control" />
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center">
+            <div class="form-check mt-4">
+                <input asp-for="IsPublished" class="form-check-input" />
+                <label asp-for="IsPublished" class="form-check-label"></label>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2 d-flex gap-2">
+            <button class="btn btn-primary">Save</button>
+            <a asp-action="Edit" asp-route-id="@Model.CourseId" class="btn btn-outline-secondary">Back</a>
+        </div>
+    </form>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

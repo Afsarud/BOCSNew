@@ -1,0 +1,8 @@
+﻿@model BOCS.ModelsView.StudentNavVM
+<li>
+    <a class="dropdown-item d-flex justify-content-between align-items-center"
+       asp-controller="MyCourses" asp-action="InProgressIndex">
+        In Progress
+        <span class="badge rounded-pill bg-secondary">@Model.InProgressCount</span>
+    </a>
+</li>

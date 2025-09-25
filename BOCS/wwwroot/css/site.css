@@ -1,0 +1,228 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* course-info */
+.lesson-item {
+    cursor: pointer;
+}
+
+.lesson-item.active {
+        /*background: rgba(13,110,253,.08);*/
+    }
+/* course-info */
+.video-top-bg {
+    background: #e9ecef;
+}
+/* layout logo */
+.logo-40 {
+    height: 40px;
+}
+
+
+/* Shell & frame */
+.video-shell {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-frame {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+    .video-frame iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Visual masks (ঐচ্ছিক, শুধু ঢাকতে) */
+.video-mask {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
+
+    .video-mask.tl {
+        top: 0;
+        left: 0;
+        width: 36%;
+        height: 12%;
+        background: linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,0));
+    }
+
+    .video-mask.tr {
+        top: 0;
+        right: 0;
+        width: 24%;
+        height: 16%;
+        background: linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,0));
+    }
+
+/* 🎯 Click shields (শুধু আইকন/ওভারলে জায়গায় ক্লিক আটকাবে) */
+.guard {
+    position: absolute;
+    z-index: 3;
+    background: transparent;
+    pointer-events: auto;
+}
+
+/* Top-right copy-link ছোট বক্স */
+.guard-copy {
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+/* Bottom-right আইকনগুলো (YouTube/gear/CC) */
+
+/*.guard-yt {
+    right: 8px;
+    bottom: 8px;
+    width: 50px;
+    height: 30px;
+}*/
+
+.guard-yt {
+    right: 6px;
+    bottom: 6px;
+    width: 120px;
+    height: 40px;
+}
+/* আগে থেকে বড় */
+@media (max-width: 768px) {
+    .guard-yt {
+        width: 100px;
+        height: 36px;
+    }
+}
+
+
+.guard-gear {
+    right: 60px;
+    bottom: 8px;
+    width: 36px;
+    height: 30px;
+}
+
+.guard-cc {
+    right: 100px;
+    bottom: 8px;
+    width: 36px;
+    height: 30px;
+}
+
+/* কেন্দ্র-নীচের “More videos” ডায়ালগ এরিয়া (কন্ট্রোল বার বাদ দিয়ে) */
+.guard-more {
+    left: 10%;
+    right: 10%;
+    bottom: 56px; 
+    height: 160px; 
+}
+
+
+@media (max-width: 768px) {
+    .guard-more {
+        left: 8%;
+        right: 8%;
+        bottom: 50px;
+        height: 120px;
+    }
+
+    .guard-copy {
+        width: 48px;
+        height: 36px;
+    }
+}
+
+
+/* ====== Courses/Index copy-protection ====== */
+.block-copy, .block-copy * {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+    /* ফর্ম ফিল্ডে সিলেক্ট allow */
+    .block-copy input,
+    .block-copy textarea,
+    .block-copy select {
+        -webkit-user-select: text !important;
+        user-select: text !important;
+    }
+    /* ইমেজ drag/long-press সেভ ঠেকানো */
+    .block-copy img {
+        -webkit-user-drag: none;
+        pointer-events: none;
+    }
+
+/* utility classes moved from inline */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-form {
+    max-width: 520px;
+    width: 100%;
+}
+
+/*info details block*/
+
+/* Copy-lock utility (use on any container) */
+.lock-copy, .lock-copy * {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    -webkit-touch-callout: none; /* iOS long-press menus */
+}
+/* images: no drag / save */
+.lock-copy img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+
+.course-thumb {
+    width: 120px !important;
+    height: 70px !important;
+    object-fit: cover;
+    border-radius: .5rem;
+    border: 1px solid #eee;
+    flex-shrink: 0; /* যাতে ছোট হয়ে না যায় */
+}
+/*.course-thumb {
+    --thumb-w: 120px;
+    --thumb-h: 70px;
+    width: var(--thumb-w);
+    height: var(--thumb-h);
+    object-fit: cover;
+}*/

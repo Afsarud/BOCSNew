@@ -1,0 +1,19 @@
+﻿@model BOCS.ModelsView.LessonDeleteVM
+@{
+    ViewData["Title"] = "Delete Lesson";
+}
+<section class="container py-4">
+    <h4 class="mb-3 text-danger">Delete lesson</h4>
+    <p>Are you sure you want to delete: <strong>@Model.Title</strong> ?</p>
+
+    <form asp-action="Delete" asp-route-courseId="@Model.CourseId" asp-route-id="@Model.Id" method="post">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a class="btn btn-outline-secondary"
+           asp-controller="CourseLesson"
+           asp-action="Manage"
+           asp-route-courseId="@Model.CourseId">
+            Cancel
+        </a>
+    </form>
+</section>

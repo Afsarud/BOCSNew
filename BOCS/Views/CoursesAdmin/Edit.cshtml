@@ -1,0 +1,63 @@
+﻿@model BOCS.Models.Course
+@{
+    ViewData["Title"] = "Edit Course";
+}
+<section class="container py-3">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h4 class="mb-3">Edit Course</h4>
+            <form asp-action="Edit" asp-route-id="@Model.Id" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ThumbnailUrl" /> @* keep old if not uploading *@
+
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" asp-for="IsActive" />
+                    <label class="form-check-label" asp-for="IsActive"></label>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="DurationDays" class="form-label"></label>
+                    <input asp-for="DurationDays" class="form-control" type="number" min="1" max="3650" />
+                    <span asp-validation-for="DurationDays" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="PriceBdt" class="form-label"></label>
+                    <input asp-for="PriceBdt" class="form-control" type="number" min="0" step="1" />
+                    <span asp-validation-for="PriceBdt" class="text-danger"></span>
+                </div>
+                <!-- ✅ নতুন: Course Type dropdown (1=Full, 2=Half) -->
+                <div class="mb-3" style="max-width: 320px;">
+                    <label asp-for="CourseType" class="form-label"></label>
+                    <select asp-for="CourseType"
+                            class="form-select"
+                            asp-items="Html.GetEnumSelectList<BOCS.Models.CourseType>()">
+                        <option value="">-- Select --</option>
+                    </select>
+                    <span asp-validation-for="CourseType" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Thumbnail</label>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="@(string.IsNullOrWhiteSpace(Model.ThumbnailUrl)
+                ? "/images/placeholder-course.png"
+                : Model.ThumbnailUrl)"
+                             class="course-thumb" alt="thumb" />
+                        <input type="file" name="thumbnail" accept="image/*" class="form-control" />
+                    </div>
+                    <div class="form-text">Upload to replace the existing image. Max 2MB.</div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-success" type="submit">Update</button>
+                    <a class="btn btn-outline-secondary" asp-action="Index">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

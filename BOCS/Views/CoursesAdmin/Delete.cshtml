@@ -1,0 +1,18 @@
+﻿@model BOCS.Models.Course
+
+<section class="container py-3">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h4 class="mb-3">Delete Course</h4>
+            <p>Are you sure you want to delete <strong>@Model.Title</strong>?</p>
+
+            <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                @Html.AntiForgeryToken()
+                <div class="d-flex gap-2">
+                    <button class="btn btn-danger" type="submit">Yes, delete</button>
+                    <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

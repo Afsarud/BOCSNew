@@ -1,0 +1,113 @@
+﻿@model IEnumerable<BOCS.ModelsView.EnrollmentAdminItemVM>
+@{
+    var status = (string)(ViewBag.Status ?? "pending");
+    ViewData["Title"] = "Enrollments";
+}
+<section class="container py-4">
+    @if (TempData["StatusMessage"] is string m)
+    {
+        <div class="alert alert-success">@m</div>
+    }
+
+    <div class="d-flex align-items-center gap-2 mb-3">
+        <h4 class="mb-0">Enrollments</h4>
+        <div class="ms-auto btn-group">
+            <a class="btn btn-sm @(status=="pending"?"btn-primary":"btn-outline-primary")"
+               asp-action="Index" asp-route-status="pending">Pending</a>
+            <a class="btn btn-sm @(status=="approved"?"btn-primary":"btn-outline-primary")"
+               asp-action="Index" asp-route-status="approved">Approved</a>
+            <a class="btn btn-sm @(status=="archived"?"btn-primary":"btn-outline-primary")"
+               asp-action="Index" asp-route-status="archived">Archived</a>
+        </div>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No records.</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-sm align-middle">
+                <thead>
+                    <tr>
+                        <th style="width:140px">Created</th>
+                        <th>Course</th>
+                        <th>Student</th>
+                        <th style="width:110px">Method</th>
+                        <th style="width:160px">Txn Id</th>
+                        <th style="width:120px">Sender</th>
+                        <th style="width:100px" class="text-end">Price</th>
+                        <th style="width:80px" class="text-center">Tic</th> <!-- 🔹 New -->
+                        <th style="width:240px" class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var x in Model)
+                    {
+                        <tr>
+                            <td>@x.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")</td>
+                            <td>
+                                <div class="fw-semibold">@x.CourseTitle</div>
+                                <div class="small text-muted">#@x.CourseId</div>
+                            </td>
+                            <td>
+                                <div class="fw-semibold">@x.StudentName</div>
+                                <div class="small text-muted">@x.StudentEmail</div>
+                            </td>
+                            <td>@x.PaymentMethod</td>
+                            <td><code>@x.TransactionId</code></td>
+                            <td>@x.SenderNumber</td>
+                            <td class="text-end">৳ @x.Price.ToString("N0")</td>
+
+                            <!-- 🔹 Tic Checkbox -->
+                            <td class="text-center">
+                                <form asp-action="ToggleTic" asp-route-id="@x.Id" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <input type="checkbox" onchange="this.form.submit()" @(x.Tic ? "checked" : "") />
+                                </form>
+                            </td>
+
+                            <td class="text-end">
+                                @if (!x.IsApproved && !x.IsArchived)
+                                {
+                                    <form asp-action="Approve" asp-route-id="@x.Id" asp-route-status="@status"
+                                          method="post" class="d-inline ms-1">
+                                        @Html.AntiForgeryToken()
+                                        <button class="btn btn-sm btn-success">Approve</button>
+                                    </form>
+                                    <form asp-action="Archive" asp-route-id="@x.Id" asp-route-status="@status"
+                                          method="post" class="d-inline ms-1">
+                                        @Html.AntiForgeryToken()
+                                        <button class="btn btn-sm btn-outline-secondary">Archive</button>
+                                    </form>
+                                }
+                                else if (x.IsApproved && !x.IsArchived)
+                                {
+                                    <span class="badge bg-success ms-1">Approved</span>
+                                    <form asp-action="Archive" asp-route-id="@x.Id" asp-route-status="@status"
+                                          method="post" class="d-inline ms-1">
+                                        @Html.AntiForgeryToken()
+                                        <button class="btn btn-sm btn-outline-secondary">Archive</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary ms-1">Archived</span>
+                                }
+
+                                <!-- সব ট্যাবেই Remove থাকবে -->
+                                <form asp-action="Remove" asp-route-id="@x.Id" asp-route-status="@status"
+                                      method="post" class="d-inline"
+                                      onsubmit="return confirm('Remove this enrollment permanently?');">
+                                    @Html.AntiForgeryToken()
+                                    <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</section>

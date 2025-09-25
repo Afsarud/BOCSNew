@@ -1,0 +1,105 @@
+﻿@model BOCS.ModelsView.CourseListItemVM
+
+@{
+    var placeholder = Url.Content("~/images/doc3.jpg");
+
+    string src = placeholder;
+    if (!string.IsNullOrWhiteSpace(Model.ThumbnailUrl))
+    {
+        var url = Model.ThumbnailUrl.Trim();
+
+        bool isAbsolute = url.StartsWith("http", StringComparison.OrdinalIgnoreCase)
+                       || url.StartsWith("data:", StringComparison.OrdinalIgnoreCase)
+                       || url.StartsWith("//");
+
+        if (isAbsolute)
+        {
+            src = url;
+        }
+        else
+        {
+            if (!url.StartsWith("~/") && !url.StartsWith("/"))
+                url = "~/" + url.TrimStart('/');
+
+            src = Url.Content(url);
+        }
+    }
+}
+
+<div class="card h-100 course-card border-0 shadow-sm">
+    <div class="ratio ratio-16x9 bg-light rounded-top position-relative">
+        <a asp-controller="Courses" asp-action="Info" asp-route-id="@Model.Id"
+           class="d-block rounded-top overflow-hidden w-100 h-100">
+            <img src="@src"
+                 class="w-100 h-100 object-fit-cover rounded-top"
+                 alt="@Model.Title"
+                 loading="lazy"
+                 onerror="this.onerror=null;this.src='@placeholder';" />
+        </a>
+
+        <div class="position-absolute top-0 start-0 p-2 d-flex gap-2">
+            @if (Model.IsNew)
+            {
+                <span class="badge bg-success-subtle text-success border border-success-subtle">New</span>
+            }
+            @if (Model.IsEnrolled)
+            {
+                <span class="badge bg-primary">Enrolled</span>
+            }
+        </div>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h5 class="card-title mb-1 text-truncate">@Model.Title</h5>
+
+        @if (!string.IsNullOrWhiteSpace(Model.TeacherName))
+        {
+            <div class="small text-muted mb-2">Instructor: @Model.TeacherName</div>
+        }
+
+        <p class="card-text text-muted small mb-3" style="min-height:2.5rem;">
+            @(string.IsNullOrWhiteSpace(Model.Summary) ? "No description available." : Model.Summary)
+        </p>
+
+        <div class="mt-auto d-flex gap-2">
+            <a class="btn btn-outline-secondary flex-fill"
+               asp-controller="Courses" asp-action="Details" asp-route-id="@Model.Id">
+                Details
+            </a>
+
+            @if (Model.IsEnrolled)
+            {
+                <a class="btn btn-primary flex-fill"
+                   asp-controller="MyCourses" asp-action="InProgress">
+                    Continue
+                </a>
+            }
+            else
+            {
+                <a class="btn btn-primary flex-fill disabled" tabindex="-1" aria-disabled="true" title="Ask admin to approve">
+                    Enroll
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .course-card:hover {
+        transform: translateY(-2px);
+        transition: .2s ease;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+    }
+
+    .object-fit-cover {
+        object-fit: cover;
+    }
+
+    .bg-success-subtle {
+        background-color: #e9f7ef;
+    }
+
+    .border-success-subtle {
+        border-color: #b8e1c9 !important;
+    }
+</style>

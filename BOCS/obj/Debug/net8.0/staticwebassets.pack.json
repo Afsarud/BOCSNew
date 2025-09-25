@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BOCS.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BOCS.i9ii4bak7u.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\css\\Account.css",
+      "PackagePath": "staticwebassets\\css\\Account.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\css\\course-lesson-manage.css",
+      "PackagePath": "staticwebassets\\css\\course-lesson-manage.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\BOCS Logo.jpg",
+      "PackagePath": "staticwebassets\\images\\BOCS Logo.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner1.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc1.jpg",
+      "PackagePath": "staticwebassets\\images\\doc1.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc2.jpg",
+      "PackagePath": "staticwebassets\\images\\doc2.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc3.jpg",
+      "PackagePath": "staticwebassets\\images\\doc3.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc3.png",
+      "PackagePath": "staticwebassets\\images\\doc3.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc4.jpg",
+      "PackagePath": "staticwebassets\\images\\doc4.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc4.png",
+      "PackagePath": "staticwebassets\\images\\doc4.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc5.jpg",
+      "PackagePath": "staticwebassets\\images\\doc5.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc5.png",
+      "PackagePath": "staticwebassets\\images\\doc5.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc6.jpg",
+      "PackagePath": "staticwebassets\\images\\doc6.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc6.png",
+      "PackagePath": "staticwebassets\\images\\doc6.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc7.jpg",
+      "PackagePath": "staticwebassets\\images\\doc7.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc8.jpg",
+      "PackagePath": "staticwebassets\\images\\doc8.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\doc8.png",
+      "PackagePath": "staticwebassets\\images\\doc8.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\logo1 (2).png",
+      "PackagePath": "staticwebassets\\images\\logo1 (2).png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\images\\logo1.png"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\course-info.bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\course-info.bootstrap.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\course-info.js",
+      "PackagePath": "staticwebassets\\js\\course-info.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\course-lesson-manage.js",
+      "PackagePath": "staticwebassets\\js\\course-lesson-manage.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\course-play-guard.js",
+      "PackagePath": "staticwebassets\\js\\course-play-guard.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\protect-course-info.js",
+      "PackagePath": "staticwebassets\\js\\protect-course-info.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\protect-courses-index.js",
+      "PackagePath": "staticwebassets\\js\\protect-courses-index.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\single-tab-guard.js",
+      "PackagePath": "staticwebassets\\js\\single-tab-guard.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\39cf8d6fd4764722bd6eaf906dcf10cd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\39cf8d6fd4764722bd6eaf906dcf10cd.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\429be762e39848bcbab7520cbdd651a4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\429be762e39848bcbab7520cbdd651a4.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\782d2795fed345de818729153ce6550c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\782d2795fed345de818729153ce6550c.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\a0017c5eca274b869b163c14128e4fb2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\a0017c5eca274b869b163c14128e4fb2.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\a4eac76386c84d3997001f183a2ee27e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\a4eac76386c84d3997001f183a2ee27e.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\d8a8c7e989bc4b28ba07891b174d65fc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\d8a8c7e989bc4b28ba07891b174d65fc.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\ddd333ab30d34c1298bab3c325d34a30.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\ddd333ab30d34c1298bab3c325d34a30.jpg"
+    },
+    {
+      "Id": "D:\\Afsar\\BOCS\\BOCS\\wwwroot\\uploads\\courses\\e26492b64d8c4160983faaeca9e42705.jpg",
+      "PackagePath": "staticwebassets\\uploads\\courses\\e26492b64d8c4160983faaeca9e42705.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BOCS.props",
+      "PackagePath": "build\\BOCS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BOCS.props",
+      "PackagePath": "buildMultiTargeting\\BOCS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BOCS.props",
+      "PackagePath": "buildTransitive\\BOCS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

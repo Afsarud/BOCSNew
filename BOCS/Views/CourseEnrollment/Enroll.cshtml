@@ -1,0 +1,143 @@
+﻿@model BOCS.ModelsView.AdminEnrollmentCreateVM
+@{
+    ViewData["Title"] = "Enroll (Admin)";
+    var payTo = "01308599956"; // উদাহরণ bKash নম্বর
+}
+
+<section class="container py-4">
+    <h4 class="mb-3">Enroll: @Model.CourseTitle</h4>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+
+            <form asp-action="Enroll" method="post" novalidate>
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="CourseId" />
+                <input type="hidden" asp-for="CourseTitle" />
+                <input type="hidden" asp-for="CoursePriceBdt" />
+                <input type="hidden" asp-for="CourseDurationDays" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Duration</label>
+                        <input class="form-control" value="@Model.CourseDurationDays days" readonly />
+                    </div>
+                </div>
+
+                <!-- Student dropdown -->
+                <div class="mb-3">
+                    <label asp-for="SelectedStudentId" class="form-label"></label>
+                    <select asp-for="SelectedStudentId" class="form-select"
+                            asp-items="Model.StudentOptions">
+                        <option value="">-- Select a student --</option>
+                    </select>
+                    <span asp-validation-for="SelectedStudentId" class="text-danger"></span>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="Access" class="form-label"></label>
+                        <select asp-for="Access" class="form-select"
+                                asp-items="Html.GetEnumSelectList<CourseAccessType>()"></select>
+                        <span asp-validation-for="Access" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="PaymentMethod" class="form-label"></label>
+                        <select asp-for="PaymentMethod" class="form-select"
+                                asp-items="Html.GetEnumSelectList<PaymentMethodType>()"></select>
+                        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="TransactionId" class="form-label"></label>
+                        <input asp-for="TransactionId" class="form-control" placeholder="Payment transaction id" />
+                        <span asp-validation-for="TransactionId" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="SenderNumber" class="form-label"></label>
+                        <input asp-for="SenderNumber" class="form-control" placeholder="Sender number" />
+                        <span asp-validation-for="SenderNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="MobileNumber" class="form-label"></label>
+                        <input asp-for="MobileNumber" class="form-control" placeholder="Student mobile number" />
+                        <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="StartDate" class="form-label"></label>
+                            <input asp-for="StartDate" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" id="StartDate" />
+                            <span asp-validation-for="StartDate" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="EndDate" class="form-label"></label>
+                            <input asp-for="EndDate" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" id="EndDate" readonly />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 border rounded bg-light d-flex justify-content-between align-items-center">
+                    <div class="fw-semibold">Total price</div>
+                    <div class="fs-5">৳ @Model.CoursePriceBdt.ToString("N0")</div>
+                </div>
+
+                <div class="mt-4 d-flex gap-2">
+                    <button class="btn btn-primary">Submit enrollment</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">Payment to</div>
+                <div class="card-body">
+                    <p class="mb-2">bKash (Personal):</p>
+                    <div class="input-group">
+                        <input id="payNumber" class="form-control" value="@payTo" readonly />
+                        <button class="btn btn-outline-secondary" type="button" id="copyBtn">Copy</button>
+                    </div>
+                    <small class="text-muted">টাকা পাঠানোর পর উপরের Transaction id দিন।</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('copyBtn')?.addEventListener('click', function () {
+            const input = document.getElementById('payNumber');
+            input.select(); input.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(input.value).then(() => {
+                this.innerText = 'Copied';
+                setTimeout(() => this.innerText = 'Copy', 1500);
+            });
+        });
+
+        (function () {
+            const dur = parseInt(document.querySelector('[name="CourseDurationDays"]').value || "0", 10);
+            const startEl = document.getElementById('StartDate');
+            const endEl = document.getElementById('EndDate');
+
+            const toYmd = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+            function recompute() {
+                if (!startEl.value) return;
+                const s = new Date(startEl.value + 'T00:00:00');
+                const e = new Date(s);
+                e.setDate(e.getDate() + Math.max(dur, 1) - 1); // inclusive
+                endEl.value = toYmd(e);
+            }
+
+            recompute();
+            startEl.addEventListener('change', recompute);
+        })();
+    </script>
+}

@@ -1,0 +1,31 @@
+﻿@model List<BOCS.ModelsView.CourseMiniVM>
+@{
+    ViewData["Title"] = "Choose a course";
+}
+<section class="container py-4">
+    <h4>Choose a course</h4>
+    <table class="table table-sm align-middle mt-3">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th class="text-left">Course Type</th>
+                <th class="text-center">Subjects</th>
+                <th class="text-end">Subject Manage</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Title</td>
+                    <td>@c.CourseType.ToString()</td>
+                    <td class="text-center"><span class="badge bg-secondary">@c.SubjectCount</span></td>
+                    <td class="text-end">
+                        <a asp-controller="CourseSubjects" asp-action="Index" asp-route-courseId="@c.Id"
+                           class="btn btn-primary btn-sm">Manage</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

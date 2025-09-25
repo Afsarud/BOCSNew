@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BOCS.ModelsView.CourseMiniVM>
+@{
+    ViewData["Title"] = "Course Lessons";
+}
+
+<section class="container py-4">
+    <h4 class="mb-3">Course Lessons</h4>
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Course</th>
+                    <th class="text-center" style="width:120px;">Active</th>
+                    <th class="text-center" style="width:140px;">Lessons</th>
+                    <th class="text-end" style="width:220px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td class="fw-semibold">@c.Title</td>
+                    <td class="text-center">
+                        @if (c.IsActive) { <span class="badge bg-success">Yes</span> }
+                        else             { <span class="badge bg-secondary">No</span> }
+                    </td>
+                    <td class="text-center">@c.LessonCount</td>
+                    <td class="text-end">
+                        <a class="btn btn-sm btn-primary"
+                           asp-action="CreateLesson"
+                           asp-route-courseId="@c.Id">
+                            Add Lesson
+                        </a>
+                        <a class="btn btn-sm btn-outline-secondary"
+                           asp-action="Edit" asp-route-id="@c.Id">
+                            Manage Course
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</section>

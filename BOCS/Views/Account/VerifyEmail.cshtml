@@ -1,0 +1,44 @@
+﻿@using BOCS.ModelsView;
+@model VerifyEmailViewModel
+
+@{
+    ViewData["Title"] = "Verify Email";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<div class="account-container">
+    <div class="account-box">
+        <div class="card-header bg-white">
+            <h4 class="mb-0">Verify your email</h4>
+        </div>
+        <form asp-controller="Account" asp-action="VerifyEmail" method="post" novalidate>
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                @* <label asp-for="Email" class="form-label"></label> *@
+                <input asp-for="Email" class="form-control" placeholder="name@example.com" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Verify" class="btn btn-success w-100 p-2" />
+            <div class="text-center mt-2">
+                <a asp-controller="Account" asp-action="Login" class="text-decoration-none mt-3">Back</a>
+            </div>
+        </form>
+        @if (TempData["Success"] is string ok)
+        {
+            <div class="alert alert-success mt-3">@ok</div>
+        }
+        @if (TempData["Error"] is string err)
+        {
+            <div class="alert alert-danger mt-3">@err</div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+}

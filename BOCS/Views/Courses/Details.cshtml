@@ -1,0 +1,52 @@
+﻿@model BOCS.ModelsView.CourseListItemVM
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<section class="container py-4">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h3 class="mb-2">@Model.Title</h3>
+                    <div class="text-muted mb-3">
+                        @if (Model.IsActive)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactive</span>
+                        }
+                        @if (Model.IsEnrolled)
+                        {
+                            <span class="badge bg-primary ms-2">Enrolled</span>
+                        }
+                    </div>
+
+                    <p class="lead">
+                        @(string.IsNullOrWhiteSpace(Model.Summary) ? "No description available." : Model.Summary)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        @if (Model.IsEnrolled)
+                        {
+                            <a class="btn btn-primary" asp-controller="MyCourses" asp-action="InProgress">Continue learning</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary" disabled title="Ask admin to approve">Enroll</button>
+                        }
+                        <a class="btn btn-outline-secondary" asp-controller="Courses" asp-action="Index">Back to courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

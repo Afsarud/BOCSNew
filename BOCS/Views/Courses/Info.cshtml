@@ -1,0 +1,224 @@
+﻿@using System.Text.Json
+@model BOCS.ModelsView.CourseInfoVM
+@{
+    ViewData["Title"] = "Course Info";
+    var playMap = ViewBag.LessonPlay as IDictionary<string, bool> ?? new Dictionary<string, bool>();
+    bool isAdmin = User.IsInRole("Admin");
+    var idx = 0;
+
+    // initialId: Controller থেকে এলো (শুধু play-able হলে সেট করা)
+    var initialId = Model.LatestYoutubeId
+        ?? Model.Outlines.SelectMany(g => g.Items).FirstOrDefault()?.YoutubeId
+        ?? "";
+}
+
+<section class="container py-4 lock-copy">
+    <div class="mb-2 text-muted">Courses Lesson List</div>
+    <div class="row g-3">
+        <div class="col-lg-4">
+            <h5 class="mt-3"><u>Course Outlines:</u></h5>
+            <div class="accordion" id="outlineAcc">
+                @for (var gi = 0; gi < Model.Outlines.Count; gi++)
+                {
+                    var g = Model.Outlines[gi];
+                    var cid = $"collapse_{gi}";
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading_@gi">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#@cid"
+                                    aria-expanded="false" aria-controls="@cid">
+                                @g.Title
+                            </button>
+                        </h2>
+                        <div id="@cid" class="accordion-collapse collapse" data-bs-parent="#outlineAcc">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    @foreach (var item in g.Items)
+                                    {
+                                        var yt = item.YoutubeId ?? "";
+                                        var canPlay = playMap.TryGetValue(yt, out var v) && v;
+                                        var isActive = yt == initialId;
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center lesson-item @(isActive ? "active" : "") @(canPlay ? "" : "disabled-lesson")"
+                                            data-idx="@idx" data-yt="@yt" data-canplay="@(canPlay.ToString().ToLower())"
+                                            role="button" tabindex="0">
+                                            <span class="text-truncate">@item.Label</span>
+                                            <i class="bi bi-play-circle"></i>
+                                        </li>
+                                        idx++;
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-8 ms-lg-auto text-end">
+        
+        <div>
+
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                
+                <h4 class="mb-2">@Model.Title</h4>
+            </div>
+                <div id="videoShell" class="video-shell ratio ratio-16x9 mb-3">
+                    <div id="videoTop" class="video-frame"></div>
+                    <div class="video-mask tl" aria-hidden="true"></div>
+                    <div class="video-mask tr" aria-hidden="true"></div>
+                    <div class="guard guard-copy" aria-hidden="true"></div>
+                    <div class="guard guard-more" aria-hidden="true"></div>
+                    <div class="guard guard-yt" aria-hidden="true"></div>
+                    <div class="guard guard-gear" aria-hidden="true"></div>
+                    <div class="guard guard-cc" aria-hidden="true"></div>
+                </div>
+        </div>
+           
+
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                    <h4 class="mb-2">@Model.Title</h4>
+                    <div class="text-muted">Created by: @Model.CreatedBy</div>
+                </div>
+                <div class="text-end">
+                    <div class="mb-2"><span class="fw-semibold me-1">Duration:</span> @Model.DurationDays days</div>
+                    <div><span class="fw-semibold me-1">Price:</span> ৳ @Model.PriceBdt.ToString("N0") BDT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<input type="hidden" id="IS_ADMIN_FLAG" value="@(isAdmin ? "true" : "false")" />
+
+<style>
+    .disabled-lesson {
+        opacity: .55;
+        cursor: not-allowed;
+    }
+</style>
+
+@section Scripts {
+    <script src="~/js/protect-course-info.js" asp-append-version="true"></script>
+
+    <!-- প্লেয়ার যে আইডি দিয়ে শুরু করবে -->
+    <script id="INITIAL_ID" type="application/json">
+        @Html.Raw(JsonSerializer.Serialize(initialId))
+    </script>
+
+    <!-- (প্রয়োজন হলে) লেসন আইডিগুলোর তালিকা -->
+    <script id="LESSON_IDS_DATA" type="application/json">
+        @Html.Raw(JsonSerializer.Serialize(Model.LessonIds ?? new List<string>()))
+    </script>
+
+    <!-- প্লেয়ার/নেভিগেশন স্ক্রিপ্টগুলো -->
+    <script src="~/js/course-info.bootstrap.js" asp-append-version="true"></script>
+    <script src="~/js/course-info.js" asp-append-version="true"></script>
+
+    <!-- ক্লিক-গার্ড (CSP safe: external file) -->
+    <script src="~/js/course-play-guard.js" asp-append-version="true"></script>
+}
+
+
+
+
+@* @using System.Text.Json
+@model BOCS.ModelsView.CourseInfoVM
+@{
+    ViewData["Title"] = "Course Info";
+
+    var initialId = !string.IsNullOrWhiteSpace(Model.LatestYoutubeId)
+        ? Model.LatestYoutubeId
+        : (Model.Outlines.SelectMany(g => g.Items).FirstOrDefault()?.YoutubeId ?? "");
+    var flatIds = Model.LessonIds ?? new List<string>();
+    var idx = 0;
+}
+
+<section class="container py-4 lock-copy">
+    <div class="mb-2 text-muted">Courses Lesson List</div>
+    <div class="row g-3">
+        <div class="col-lg-4">
+            <h5 class="mt-3"><u>Course Outlines:</u></h5>
+
+            <div class="accordion" id="outlineAcc">
+                @for (var gIndex = 0; gIndex < Model.Outlines.Count; gIndex++)
+                {
+                    var g = Model.Outlines[gIndex];
+                    var cid = $"collapse_{gIndex}";
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading_@gIndex">
+                            <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#@cid"
+                                    aria-expanded="false" aria-controls="@cid">
+                                @g.Title
+                            </button>
+                        </h2>
+                        <div id="@cid" class="accordion-collapse collapse" aria-labelledby="heading_@gIndex"
+                             data-bs-parent="#outlineAcc">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    @foreach (var item in g.Items)
+                                    {
+                                        var isActive = item.YoutubeId == initialId;
+                                        <li class="list-group-item d-flex justify-content-between align-items-center lesson-item @(isActive ? "active" : "")"
+                                            data-idx="@idx" data-yt="@item.YoutubeId" role="button" tabindex="0">
+                                            <span class="text-truncate">@item.Label</span>
+                                            <i class="bi bi-play-circle"></i>
+                                        </li>
+                                        idx++;
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-lg-8 ms-lg-auto text-end">
+            <!-- Info.cshtml -->
+            <div id="videoShell" class="video-shell ratio ratio-16x9 mb-3">
+                <div id="videoTop" class="video-frame"></div>
+                <div class="video-mask tl" aria-hidden="true"></div>
+                <div class="video-mask tr" aria-hidden="true"></div>
+                <div class="guard guard-copy" aria-hidden="true"></div> <!-- Top-right: Copy link -->
+                <div class="guard guard-more" aria-hidden="true"></div> <!-- Center-bottom: “More videos” ওভারলে -->
+                <div class="guard guard-yt" aria-hidden="true"></div> <!-- Bottom-right: YouTube/Watch -->
+                <div class="guard guard-gear" aria-hidden="true"></div> <!-- Bottom-right: Settings -->
+                <div class="guard guard-cc" aria-hidden="true"></div> <!-- Bottom-right: CC -->
+            </div>
+
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <!-- Left Side -->
+                <div>
+                    <h4 class="mb-2">@Model.Title</h4>
+                    <div class="text-muted">Created by: @Model.CreatedBy</div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="text-end">
+                    <div class="mb-2">
+                        <span class="fw-semibold me-1">Duration:</span>
+                        @Model.DurationDays days
+                    </div>
+                    <div>
+                        <span class="fw-semibold me-1">Price:</span>
+                        ৳ @Model.PriceBdt.ToString("N0") BDT
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/protect-course-info.js" asp-append-version="true"></script>
+    <script id="LESSON_IDS_DATA" type="application/json">
+        @Html.Raw(System.Text.Json.JsonSerializer.Serialize(flatIds))
+    </script>
+    <script src="~/js/course-info.bootstrap.js" asp-append-version="true"></script>
+    <!-- মূল লজিক: ক্লিক করলে প্লেয়ার বদলানো ইত্যাদি -->
+    <script src="~/js/course-info.js" asp-append-version="true"></script>
+    <script id="INITIAL_ID" type="application/json">
+        @Html.Raw(JsonSerializer.Serialize(initialId ?? ""))
+    </script>
+} *@

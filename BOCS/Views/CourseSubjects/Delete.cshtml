@@ -1,0 +1,16 @@
+﻿@model BOCS.ModelsView.SubjectDeleteVM
+@{
+    ViewData["Title"] = "Delete Subject";
+}
+<section class="container py-4" style="max-width:720px;">
+    <h4>Delete Subject</h4>
+    <div class="alert alert-warning mt-3">
+        Are you sure you want to delete: <strong>@Model.Title</strong> ?
+        <div class="small text-muted">Lessons under this subject will be kept but without subject.</div>
+    </div>
+
+    <form asp-action="Delete" asp-route-courseId="@Model.CourseId" asp-route-id="@Model.Id" method="post">
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a asp-action="Index" asp-route-courseId="@Model.CourseId" class="btn btn-outline-secondary">Cancel</a>
+    </form>
+</section>

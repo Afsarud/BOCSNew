@@ -1,0 +1,199 @@
+﻿@using BOCS.Services
+@inject IEnrollmentService EnrollmentSvc
+@{
+    var controller = (ViewContext.RouteData.Values["controller"]?.ToString() ?? "").ToLower();
+    var action = (ViewContext.RouteData.Values["action"]?.ToString() ?? "").ToLower();
+    // শুধু Courses/Index (বা CourseIndex) পেজে কপি প্রটেকশন
+    var isCoursesIndex = controller == "courses" && (action == "index" || action == "courseindex");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BOCS</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BOCS.styles.css" asp-append-version="true" />
+    <link rel="icon" type="image/png" href="~/images/logo.png" />
+    @RenderSection("Styles", required: false) 
+</head>
+<body class="@(isCoursesIndex ? "block-copy" : "")">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" alt="BOCS Logo" class="logo-40" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @* ===== Student-only menu ===== *@
+                        @if (User.IsInRole("Student"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="AboutUs" asp-action="Index">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Courses" asp-action="Index">All Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Students" asp-action="Index">My Course</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center"
+                                   href="#" id="myCourseDropdown"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Course Status
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="myCourseDropdown">
+                                    @await Component.InvokeAsync("StudentInProgressMenu")
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                           asp-controller="MyCourses" asp-action="CompletedIndex">
+                                            Completed
+                                            <span class="badge rounded-pill bg-secondary">@ViewBag.CompletedCount</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            @* ===== Non-student default menu (Admin/Teacher/Guest) ===== *@
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                                       href="#" id="allSettingsDropdown"
+                                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Settings
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="allSettingsDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="Admin" asp-action="Courses">
+                                                Course Setup
+                                                <span class="badge rounded-pill bg-secondary">@ViewBag.InProgressCount</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseSubjects" asp-action="Courses">
+                                                Subjects
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseLesson" asp-action="Index">
+                                                Lessons
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseEnrollment" asp-action="Index">
+                                                Course Enrollment
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="admin" asp-action="enrollments">
+                                                Course Approve
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="Account" asp-action="Register">
+                                                Register
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                            @if (User.IsInRole("Teacher"))
+                            {
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Teacher">Teachers</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                                       href="#" id="allSettingsDropdown"
+                                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Settings
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="allSettingsDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseSubjects" asp-action="Courses">
+                                                Subjects
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                               asp-controller="CourseLesson" asp-action="Index">
+                                                Lessons
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </li>
+                            }
+                        }
+
+                        <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - BOCS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    @* কেবল Courses/Index পেজে এক্সটার্নাল JS লোড করো *@
+    @if (isCoursesIndex)
+    {
+        <script src="~/js/protect-courses-index.js" asp-append-version="true"></script>
+    }
+    @if (User.Identity?.IsAuthenticated ?? false)
+    {
+        // চাইলে রোল চেক দিয়ে স্টুডেন্টদের জন্যই চালাতে পারো
+        <script src="~/js/single-tab-guard.js" asp-append-version="true"></script>
+    }
+    @await RenderSectionAsync("Scripts", required: false)
+   
+</body>
+</html>
+

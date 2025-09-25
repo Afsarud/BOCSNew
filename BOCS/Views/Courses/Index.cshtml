@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BOCS.ModelsView.CourseCatalogItemVM>
+@{
+    ViewData["Title"] = "All Courses";
+    var q = (string?)ViewBag.Query ?? "";
+}
+
+<section class="container py-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <div class="fw-semibold">All Courses:</div>
+
+        <form method="get" class="d-flex gap-2 search-form">
+            <input name="q" value="@q" class="form-control" placeholder="Search course…" />
+            <button class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <div id="courseGrid" class="row g-4">
+        @foreach (var c in Model)
+        {
+            var img = string.IsNullOrWhiteSpace(c.ThumbnailUrl)
+            ? Url.Content("~/images/doc3.jpg")
+            : Url.Content(c.ThumbnailUrl.StartsWith("~") || c.ThumbnailUrl.StartsWith("/")
+            ? c.ThumbnailUrl
+            : "~/" + c.ThumbnailUrl.TrimStart('/'));
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <a asp-controller="Courses" asp-action="Info" asp-route-id="@c.Id"
+                       class="ratio ratio-16x9 rounded-top overflow-hidden d-block">
+                        <img src="@img" alt="@c.Title"
+                             class="w-100 h-100 object-fit-cover"
+                             draggable="false" />
+                    </a>
+
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="mb-1 text-truncate" title="@c.Title">@c.Title</h6>
+                        <div class="d-flex justify-content-between text-muted small mb-3">
+                            <span>
+                                Duration: @c.DurationDays days
+                                @if (c.CourseType == CourseType.Half)
+                                {
+                                    <text> (Half)</text>   <!-- ✅ শুধুমাত্র Half হলে দেখাবে -->
+                                }
+                            </span>
+                            <span>@c.PriceBdt BDT</span>
+                        </div>
+                        <div class="mt-auto d-flex gap-2">
+                            <a class="btn btn-outline-secondary flex-fill"
+                               asp-controller="Courses" asp-action="Info" asp-route-id="@c.Id">Details</a>
+                            <a class="btn btn-primary flex-fill"
+                               asp-controller="Courses" asp-action="Enroll" asp-route-id="@c.Id">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
