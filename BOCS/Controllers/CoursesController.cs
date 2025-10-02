@@ -138,16 +138,9 @@ namespace BOCS.Controllers
             }
 
             // ytId => IsPlay map (ভিউতে data-attribute বানাতে)
-            //ViewBag.LessonPlay = lessons
-            //    .GroupBy(x => x.YoutubeId)
-            //    .ToDictionary(g => g.Key, g => g.Any(z => z.IsPlay));
             ViewBag.LessonPlay = lessons
-          .GroupBy(x => x.YoutubeId)
-          .ToDictionary(g => g.Key, g => g.Any(z => z.IsPlay));
-
-            //check the user is enrolled or not
-            var userId = _userManager.GetUserId(User);
-            ViewBag.isEnrolled = await _db.Enrollments.AnyAsync(p => p.CourseId == id & p.StudentId == userId && p.IsApproved == true);
+                .GroupBy(x => x.YoutubeId)
+                .ToDictionary(g => g.Key, g => g.Any(z => z.IsPlay));
 
             // প্রথম play-able yt id (থাকলে)
             string? firstPlayableId = lessons
