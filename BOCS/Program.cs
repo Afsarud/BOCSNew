@@ -29,6 +29,9 @@ builder.Services.AddIdentity<Users, IdentityRole>(options =>
 // Student "My Course" menu helper
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
+// File upload service
+builder.Services.AddScoped<FileUploadService>();
+
 // Auth cookie (session-like)
 builder.Services.ConfigureApplicationCookie(options =>
 {

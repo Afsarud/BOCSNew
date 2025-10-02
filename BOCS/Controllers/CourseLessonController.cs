@@ -16,7 +16,13 @@ namespace BOCS.Controllers
     public class CourseLessonController : Controller
     {
         private readonly AppDbContext _db;
-        public CourseLessonController(AppDbContext db) => _db = db;
+        private readonly FileUploadService _fileUploadService;
+        
+        public CourseLessonController(AppDbContext db, FileUploadService fileUploadService)
+        {
+            _db = db;
+            _fileUploadService = fileUploadService;
+        }
         [HttpGet("")]
         public async Task<IActionResult> Index()
         {
@@ -107,7 +113,9 @@ namespace BOCS.Controllers
             {
                 CourseId = courseId,
                 SortOrder = next,
-                IsPublished = true
+                IsPublished = true,
+                ExistingImages = new List<AttachmentDisplayVM>(),
+                ExistingDocuments = new List<AttachmentDisplayVM>()
             };
 
             return View(vm);
@@ -124,6 +132,11 @@ namespace BOCS.Controllers
                     .OrderBy(s => s.SortOrder)
                     .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Title })
                     .ToListAsync();
+                
+                // Initialize attachment collections if they're null
+                vm.ExistingImages ??= new List<AttachmentDisplayVM>();
+                vm.ExistingDocuments ??= new List<AttachmentDisplayVM>();
+                
                 return View(vm);
             }
             var max = await _db.Lessons
@@ -136,21 +149,42 @@ namespace BOCS.Controllers
             if (ytId == null)
                 ModelState.AddModelError(nameof(vm.YoutubeUrlOrId), "Invalid YouTube URL or ID.");
 
-            //if (!ModelState.IsValid) return View("Create", vm);
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Subjects = await _db.Subjects.AsNoTracking()
+                    .Where(s => s.CourseId == courseId && s.IsPublished)
+                    .OrderBy(s => s.SortOrder)
+                    .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Title })
+                    .ToListAsync();
+                return View(vm);
+            }
 
-            _db.Lessons.Add(new CourseLesson
+            var lesson = new CourseLesson
             {
                 CourseId = courseId,
                 Title = vm.Title,
                 YoutubeId = ytId,
                 YoutubeUrlRaw = vm.YoutubeUrlOrId,
                 IsPublished = vm.IsPublished,
-                SubjectId = vm.SubjectId,  //new added subject
+                SubjectId = vm.SubjectId,
                 SortOrder = next,
                 CreatedAtUtc = DateTime.UtcNow
-            });
+            };
 
+            _db.Lessons.Add(lesson);
             await _db.SaveChangesAsync();
+
+            // Handle file uploads
+            var imageAttachments = await _fileUploadService.SaveFilesAsync(vm.LessonImages, lesson.Id, AttachmentType.Image);
+            var docAttachments = await _fileUploadService.SaveFilesAsync(vm.LessonDocuments, lesson.Id, AttachmentType.Document);
+
+            if (imageAttachments.Any() || docAttachments.Any())
+            {
+                _db.LessonAttachment.AddRange(imageAttachments);
+                _db.LessonAttachment.AddRange(docAttachments);
+                await _db.SaveChangesAsync();
+            }
+
             TempData["StatusMessage"] = "✅ Lesson created.";
             return RedirectToAction(nameof(Manage), new { courseId });
         }
@@ -159,7 +193,7 @@ namespace BOCS.Controllers
         public async Task<IActionResult> Edit(int courseId, int id)
         {
             var lesson = await _db.Lessons
-                .AsNoTracking()
+                .Include(l => l.Attachments)
                 .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
             if (lesson == null) return NotFound();
 
@@ -178,7 +212,9 @@ namespace BOCS.Controllers
                 YoutubeUrlOrId = string.IsNullOrWhiteSpace(lesson.YoutubeUrlRaw) ? lesson.YoutubeId : lesson.YoutubeUrlRaw,
                 SortOrder = lesson.SortOrder,
                 IsPublished = lesson.IsPublished,
-                SubjectId = lesson.SubjectId
+                SubjectId = lesson.SubjectId,
+                ExistingImages = _fileUploadService.GetAttachmentDisplayVMs(lesson.Images.ToList()),
+                ExistingDocuments = _fileUploadService.GetAttachmentDisplayVMs(lesson.Docs.ToList())
             };
 
             return View("Edit", vm);
@@ -195,29 +231,78 @@ namespace BOCS.Controllers
 
             if (!ModelState.IsValid)
             {
-                // repopulate dropdown
+                // repopulate dropdown and existing attachments
                 ViewBag.Subjects = await _db.Subjects
                     .Where(s => s.CourseId == courseId && s.IsPublished)
                     .OrderBy(s => s.SortOrder)
                     .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Title })
                     .ToListAsync();
 
+                var lesson = await _db.Lessons
+                    .Include(l => l.Attachments)
+                    .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
+                
+                if (lesson != null)
+                {
+                    vm.ExistingImages = _fileUploadService.GetAttachmentDisplayVMs(lesson.Images.ToList());
+                    vm.ExistingDocuments = _fileUploadService.GetAttachmentDisplayVMs(lesson.Docs.ToList());
+                }
+                else
+                {
+                    vm.ExistingImages ??= new List<AttachmentDisplayVM>();
+                    vm.ExistingDocuments ??= new List<AttachmentDisplayVM>();
+                }
+
                 return View("Edit", vm);
             }
 
-            var lesson = await _db.Lessons.FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
-            if (lesson == null) return NotFound();
+            var lessonToUpdate = await _db.Lessons
+                .Include(l => l.Attachments)
+                .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
+            if (lessonToUpdate == null) return NotFound();
 
-            lesson.Title = vm.Title;
-            lesson.YoutubeId = ytId;
-            lesson.YoutubeUrlRaw = vm.YoutubeUrlOrId;
-            lesson.SortOrder = vm.SortOrder;
-            lesson.IsPublished = vm.IsPublished;
-            lesson.SubjectId = vm.SubjectId;
+            lessonToUpdate.Title = vm.Title;
+            lessonToUpdate.YoutubeId = ytId;
+            lessonToUpdate.YoutubeUrlRaw = vm.YoutubeUrlOrId;
+            lessonToUpdate.SortOrder = vm.SortOrder;
+            lessonToUpdate.IsPublished = vm.IsPublished;
+            lessonToUpdate.SubjectId = vm.SubjectId;
+
+            // Handle new file uploads
+            var imageAttachments = await _fileUploadService.SaveFilesAsync(vm.LessonImages, lessonToUpdate.Id, AttachmentType.Image);
+            var docAttachments = await _fileUploadService.SaveFilesAsync(vm.LessonDocuments, lessonToUpdate.Id, AttachmentType.Document);
+
+            if (imageAttachments.Any() || docAttachments.Any())
+            {
+                _db.LessonAttachment.AddRange(imageAttachments);
+                _db.LessonAttachment.AddRange(docAttachments);
+            }
 
             await _db.SaveChangesAsync();
             TempData["StatusMessage"] = "✏️ Lesson updated.";
             return RedirectToAction(nameof(Manage), new { courseId });
+        }
+
+        [HttpPost("delete-attachment/{attachmentId:int}"), ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAttachment(int attachmentId)
+        {
+            var attachment = await _db.LessonAttachment
+                .Include(a => a.CourseLesson)
+                .FirstOrDefaultAsync(a => a.Id == attachmentId);
+            
+            if (attachment == null) return NotFound();
+
+            var courseId = attachment.CourseLesson.CourseId;
+
+            // Delete physical file
+            _fileUploadService.DeleteFile(attachment.RelativePath);
+
+            // Delete from database
+            _db.LessonAttachment.Remove(attachment);
+            await _db.SaveChangesAsync();
+
+            TempData["StatusMessage"] = "🗑️ Attachment deleted successfully.";
+            return RedirectToAction(nameof(Edit), new { courseId, id = attachment.CourseLessonId });
         }
 
         [HttpGet("{courseId:int}/delete/{id:int}")]
@@ -238,11 +323,22 @@ namespace BOCS.Controllers
         [HttpPost("{courseId:int}/delete/{id:int}"), ValidateAntiForgeryToken, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int courseId, int id)
         {
-            var l = await _db.Lessons
+            var lesson = await _db.Lessons
+                .Include(l => l.Attachments)
                 .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
-            if (l == null) return NotFound();
+            if (lesson == null) return NotFound();
 
-            _db.Lessons.Remove(l);
+            // Delete all associated attachments and their files
+            foreach (var attachment in lesson.Attachments)
+            {
+                _fileUploadService.DeleteFile(attachment.RelativePath);
+            }
+
+            // Remove attachments from database
+            _db.LessonAttachment.RemoveRange(lesson.Attachments);
+            
+            // Remove the lesson
+            _db.Lessons.Remove(lesson);
             await _db.SaveChangesAsync();
 
             TempData["StatusMessage"] = "🗑️ Lesson deleted.";

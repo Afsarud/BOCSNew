@@ -31,7 +31,14 @@ namespace BOCS.Models
         public bool IsPlay { get; set; } = false;
         public CourseSubject? Subject { get; set; }
 
-        public ICollection<CourseLessonAttachment> Images { get; set; } = new List<CourseLessonAttachment>();
-        public ICollection<CourseLessonAttachment> Docs { get; set; } = new List<CourseLessonAttachment>();
+        [NotMapped]
+        public ICollection<CourseLessonAttachment> Images => 
+            Attachments?.Where(a => a.AttachmentType == AttachmentType.Image).ToList() ?? new List<CourseLessonAttachment>();
+        
+        [NotMapped]
+        public ICollection<CourseLessonAttachment> Docs => 
+            Attachments?.Where(a => a.AttachmentType == AttachmentType.Document).ToList() ?? new List<CourseLessonAttachment>();
+
+        public ICollection<CourseLessonAttachment> Attachments { get; set; } = new List<CourseLessonAttachment>();
     }
 }

@@ -8,7 +8,8 @@
     <form asp-action="Edit"
           asp-route-courseId="@Model.CourseId"
           asp-route-id="@Model.Id"
-          method="post">
+          method="post"
+          enctype="multipart/form-data">
         @Html.AntiForgeryToken()
         <input type="hidden" asp-for="CourseId" />
         <input type="hidden" asp-for="Id" />
@@ -47,6 +48,78 @@
             </select>
         </div>
 
+        <!-- File Upload Section -->
+        <div class="mb-4">
+            <h5>Lesson Attachments</h5>
+            
+            <!-- Existing Images -->
+            @if (Model.ExistingImages.Any())
+            {
+                <div class="mb-3">
+                    <label class="form-label">Existing Images</label>
+                    <div class="row" id="existingImages">
+                        @foreach (var image in Model.ExistingImages)
+                        {
+                            <div class="col-md-2 col-sm-3 col-4 mb-2" data-attachment-id="@image.Id">
+                                <div class="card">
+                                    <img src="@image.FilePath" class="card-img-top" style="height: 60px; object-fit: cover;" alt="@image.FileName">
+                                    <div class="card-body p-1">
+                                        <small class="text-muted d-block" style="font-size: 0.7rem; line-height: 1.1;">@image.FileName</small>
+                                        <small class="text-muted" style="font-size: 0.6rem;">@image.FileSize</small>
+                                        <button type="button" class="btn btn-sm btn-outline-danger float-end delete-attachment-btn" style="padding: 0.1rem 0.3rem; font-size: 0.7rem;" data-attachment-id="@image.Id" data-attachment-type="image">
+                                            <i class="bi bi-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+
+            <!-- New Images Upload -->
+            <div class="mb-3">
+                <label asp-for="LessonImages" class="form-label">Add More Images</label>
+                <input asp-for="LessonImages" type="file" class="form-control" multiple accept="image/*" />
+                <div class="form-text">Select multiple image files (JPG, PNG, GIF)</div>
+            </div>
+
+            <!-- Existing Documents -->
+            @if (Model.ExistingDocuments.Any())
+            {
+                <div class="mb-3">
+                    <label class="form-label">Existing Documents</label>
+                    <div class="list-group" id="existingDocuments">
+                        @foreach (var doc in Model.ExistingDocuments)
+                        {
+                            <div class="list-group-item d-flex justify-content-between align-items-center" data-attachment-id="@doc.Id">
+                                <div>
+                                    <strong>@doc.FileName</strong>
+                                    <br>
+                                    <small class="text-muted">@doc.FileSize</small>
+                                </div>
+                                <div>
+                                    <a href="@doc.FilePath" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                                        <i class="bi bi-download"></i>
+                                    </a>
+                                    <button type="button" class="btn btn-sm btn-outline-danger delete-attachment-btn" data-attachment-id="@doc.Id" data-attachment-type="document">
+                                        <i class="bi bi-x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+
+            <!-- New Documents Upload -->
+            <div class="mb-3">
+                <label asp-for="LessonDocuments" class="form-label">Add More Documents</label>
+                <input asp-for="LessonDocuments" type="file" class="form-control" multiple accept=".pdf,.doc,.docx,.txt,.ppt,.pptx" />
+                <div class="form-text">Select multiple document files (PDF, DOC, DOCX, TXT, PPT, PPTX)</div>
+            </div>
+        </div>
+
         <div class="mt-3 d-flex gap-2">
             <button type="submit" class="btn btn-primary">Update</button>
             <a class="btn btn-outline-secondary"
@@ -61,4 +134,5 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/lesson-management.js"></script>
 }

@@ -1,4 +1,6 @@
-﻿namespace BOCS.ModelsView
+﻿using Microsoft.AspNetCore.Http;
+
+namespace BOCS.ModelsView
 {
     public class LessonEditVM
     {
@@ -11,5 +13,13 @@
         public bool IsPublished { get; set; }
 
         public int? SubjectId { get; set; }
+
+        // File upload properties
+        public IFormFileCollection? LessonImages { get; set; }
+        public IFormFileCollection? LessonDocuments { get; set; }
+
+        // For displaying existing attachments
+        public List<AttachmentDisplayVM> ExistingImages { get; set; } = new();
+        public List<AttachmentDisplayVM> ExistingDocuments { get; set; } = new();
     }
 }

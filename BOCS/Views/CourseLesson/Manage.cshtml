@@ -50,6 +50,8 @@
                     <input id="chkAll" type="checkbox" class="form-check-input" />
                 </th>
                 <th>Title</th>
+                <th>Images</th>
+                <th>Files</th>
                 <th style="width:180px">YouTube Id</th>
                 <th style="width:120px">Published</th>
                 <th style="width:140px" class="text-end">Actions</th>
@@ -68,6 +70,8 @@
                         <input type="checkbox" class="chk-one" @(l.IsPlay ? "checked" : "") />
                     </td>
                     <td>@l.Title</td>
+                    <td></td>
+                    <td></td>
                     <td><code class="text-danger">@l.YoutubeId</code></td>
                     <td>@(l.IsPublished ? "Yes" : "No")</td>
                     <td class="text-end">
