@@ -14,7 +14,7 @@ namespace BOCS.Models
         public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
         public string RelativePath { get; set; } = "";
         public string AttatchmentName { get; set; } = "";
-        public int Order { get; set; } = 0;
+        public int Order { get; set; } = 0; 
     }
     public enum AttachmentType
     {

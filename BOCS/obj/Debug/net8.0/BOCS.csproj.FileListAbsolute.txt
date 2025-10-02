@@ -723,3 +723,4 @@ D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.pdb
 D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
 D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\ref\BOCS.dll
 D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.sourcelink.json
