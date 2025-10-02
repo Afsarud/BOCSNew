@@ -27,6 +27,10 @@
 
         // ✅ indexing-এর জন্য ফ্ল্যাট লিস্ট
         public List<string> LessonIds { get; set; } = new();
+        
+        // ✅ Course attachments
+        public List<AttachmentDisplayVM> CourseImages { get; set; } = new();
+        public List<AttachmentDisplayVM> CourseDocuments { get; set; } = new();
     }
     public class OutlineGroupVM
     {

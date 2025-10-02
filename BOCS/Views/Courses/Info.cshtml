@@ -92,9 +92,114 @@
                     <div><span class="fw-semibold me-1">Price:</span> ৳ @Model.PriceBdt.ToString("N0") BDT</div>
                 </div>
             </div>
+
+            
+        </div>
+        <div class="col-lg-12">
+            @if (isEnrolled)
+            {
+                @if (Model.CourseImages.Any() || Model.CourseDocuments.Any())
+                {
+                    <div class="mt-4">
+                        <h5 class="mb-3">Course Materials</h5>
+
+                        <!-- Images Section -->
+                        @if (Model.CourseImages.Any())
+                        {
+                            <div class="mb-4">
+                                <h6 class="text-muted mb-3">Images (@Model.CourseImages.Count)</h6>
+                                <div class="row g-2">
+                                     @foreach (var image in Model.CourseImages)
+                                     {
+                                         <div class="col-md-2 col-sm-3 col-4">
+                                             <div class="card h-100 image-card" style="cursor: pointer;" data-image-src="@image.FilePath" data-image-name="@image.FileName">
+                                                 <div class="card-img-container" style="height: 80px; overflow: hidden;">
+                                                     <img src="@image.FilePath" class="card-img-top w-100 h-100" style="object-fit: cover;" alt="@image.FileName">
+                                                 </div>
+                                                 <div class="card-body p-2 d-flex flex-column" style="min-height: 60px;">
+                                                     <div class="flex-grow-1">
+                                                         <small class="text-muted d-block" style="font-size: 0.7rem; line-height: 1.1; word-break: break-word;">@image.FileName</small>
+                                                         <small class="text-muted" style="font-size: 0.6rem;">@image.FileSize</small>
+                                                     </div>
+                                                     <div class="mt-1">
+                                                         <button type="button" class="btn btn-sm btn-outline-success download-image-btn w-100" style="padding: 0.1rem 0.3rem; font-size: 0.7rem;" data-image-src="@image.FilePath" data-image-name="@image.FileName">
+                                                             <i class="bi bi-download"></i> Download
+                                                         </button>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     }
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Documents Section -->
+                        @if (Model.CourseDocuments.Any())
+                        {
+                            <div class="mb-4">
+                                <h6 class="text-muted mb-3">Documents (@Model.CourseDocuments.Count)</h6>
+                                <div class="list-group">
+                                    @foreach (var doc in Model.CourseDocuments)
+                                    {
+                                        <div class="list-group-item d-flex justify-content-between align-items-center document-item" data-doc-src="@doc.FilePath" data-doc-name="@doc.FileName">
+                                            <div>
+                                                <strong>@doc.FileName</strong>
+                                                <br>
+                                                <small class="text-muted">@doc.FileSize</small>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn btn-sm btn-outline-primary view-document-btn" data-doc-src="@doc.FilePath">
+                                                    <i class="bi bi-eye"></i> View
+                                                </button>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            }
+            <!-- Course Attachments Section -->
+            
         </div>
     </div>
 </section>
+
+<!-- Image Viewer Modal -->
+<div class="modal fade" id="imageViewerModal" tabindex="-1" aria-labelledby="imageViewerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-white" id="imageViewerModalLabel">Image Viewer</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 position-relative">
+                <div class="image-container position-relative" style="min-height: 70vh;">
+                    <img id="modalImage" class="img-fluid w-100 h-100" style="object-fit: contain;" alt="Course Image">
+                    
+                    <!-- Navigation Arrows -->
+                    <button type="button" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-3" id="prevImageBtn" style="z-index: 10;">
+                        &lsaquo;
+                    </button>
+                    <button type="button" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-3" id="nextImageBtn" style="z-index: 10;">
+                        &rsaquo;
+                    </button>
+                    
+                   
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <div class="text-white">
+                    <span id="imageCounter">1 / 1</span>
+                    <span class="ms-3" id="imageName">Image Name</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <input type="hidden" id="IS_ADMIN_FLAG" value="@(isAdmin ? "true" : "false")" />
 
 <style>
@@ -123,6 +228,9 @@
 
     <!-- ক্লিক-গার্ড (CSP safe: external file) -->
     <script src="~/js/course-play-guard.js" asp-append-version="true"></script>
+    
+    <!-- Attachments Viewer -->
+    <script src="~/js/course-attachments-viewer.js" asp-append-version="true"></script>
 }
 
 

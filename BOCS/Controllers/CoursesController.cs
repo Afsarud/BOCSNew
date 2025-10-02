@@ -110,6 +110,35 @@ namespace BOCS.Controllers
                 .Select(l => new { l.Id, l.Title, l.YoutubeId, l.SubjectId, l.IsPlay })
                 .ToListAsync();
 
+            // Fetch all attachments for this course
+            var attachments = await _db.LessonAttachment
+                .Include(a => a.CourseLesson)
+                .Where(a => a.CourseLesson.CourseId == id)
+                .AsNoTracking()
+                .ToListAsync();
+
+            var courseImages = attachments
+                .Where(a => a.AttachmentType == AttachmentType.Image)
+                .Select(a => new AttachmentDisplayVM
+                {
+                    Id = a.Id,
+                    FileName = a.AttatchmentName,
+                    FilePath = a.RelativePath,
+                    FileSize = GetFileSize(a.RelativePath)
+                })
+                .ToList();
+
+            var courseDocuments = attachments
+                .Where(a => a.AttachmentType == AttachmentType.Document)
+                .Select(a => new AttachmentDisplayVM
+                {
+                    Id = a.Id,
+                    FileName = a.AttatchmentName,
+                    FilePath = a.RelativePath,
+                    FileSize = GetFileSize(a.RelativePath)
+                })
+                .ToList();
+
             var subjects = await _db.Subjects.AsNoTracking()
                 .Where(s => s.CourseId == id && s.IsPublished)
                 .OrderBy(s => s.SortOrder)
@@ -165,7 +194,9 @@ namespace BOCS.Controllers
                 CreatedBy = "Admin",
                 Outlines = outlines,
                 // ভিউতে initialId হিসেবে আমরা আলাদা স্ক্রিপ্টে দেব
-                LatestYoutubeId = firstPlayableId
+                LatestYoutubeId = firstPlayableId,
+                CourseImages = courseImages,
+                CourseDocuments = courseDocuments
             });
         }
 
@@ -236,6 +267,34 @@ namespace BOCS.Controllers
         {
             var tz = TimeZoneInfo.FindSystemTimeZoneById("Asia/Dhaka");
             return TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz).Date;
+        }
+
+        private string GetFileSize(string relativePath)
+        {
+            try
+            {
+                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath.TrimStart('/'));
+                if (System.IO.File.Exists(fullPath))
+                {
+                    var fileInfo = new FileInfo(fullPath);
+                    return FormatFileSize(fileInfo.Length);
+                }
+            }
+            catch { }
+            return "Unknown";
+        }
+
+        private string FormatFileSize(long bytes)
+        {
+            string[] sizes = { "B", "KB", "MB", "GB" };
+            double len = bytes;
+            int order = 0;
+            while (len >= 1024 && order < sizes.Length - 1)
+            {
+                order++;
+                len = len / 1024;
+            }
+            return $"{len:0.##} {sizes[order]}";
         }
 
     }
