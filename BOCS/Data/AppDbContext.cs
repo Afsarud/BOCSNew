@@ -11,6 +11,7 @@ namespace BOCS.Data
         public DbSet<Course> Courses { get; set; } = default!;
         public DbSet<CourseEnrollment> Enrollments { get; set; } = default!;
         public DbSet<CourseLesson> Lessons { get; set; } = default!;
+        public DbSet<CourseLessonAttachment> LessonAttachment { get; set; } = default!;
         public DbSet<CourseSubject> Subjects { get; set; } = default!; // ✅ নতুন
         public DbSet<Users> Users { get; set; } = default!; // ✅ নতুন
         

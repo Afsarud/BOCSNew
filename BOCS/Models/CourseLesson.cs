@@ -30,5 +30,8 @@ namespace BOCS.Models
         public int? SubjectId { get; set; }
         public bool IsPlay { get; set; } = false;
         public CourseSubject? Subject { get; set; }
+
+        public ICollection<CourseLessonAttachment> Images { get; set; } = new List<CourseLessonAttachment>();
+        public ICollection<CourseLessonAttachment> Docs { get; set; } = new List<CourseLessonAttachment>();
     }
 }
