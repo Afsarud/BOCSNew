@@ -61,20 +61,14 @@
                         @foreach (var image in Model.ExistingImages)
                         {
                             <div class="col-md-2 col-sm-3 col-4 mb-2" data-attachment-id="@image.Id">
-                                <div class="card h-100">
-                                    <div class="card-img-container" style="height: 80px; overflow: hidden;">
-                                        <img src="@image.FilePath" class="card-img-top w-100 h-100" style="object-fit: cover; object-position: center;" alt="@image.FileName">
-                                    </div>
-                                    <div class="card-body p-2 d-flex flex-column" style="min-height: 60px;">
-                                        <div class="flex-grow-1">
-                                            <small class="text-muted d-block" style="font-size: 0.7rem; line-height: 1.1; word-break: break-word;">@image.FileName</small>
-                                            <small class="text-muted" style="font-size: 0.6rem;">@image.FileSize</small>
-                                        </div>
-                                        <div class="mt-1">
-                                            <button type="button" class="btn btn-sm btn-outline-danger delete-attachment-btn w-100" style="padding: 0.1rem 0.3rem; font-size: 0.7rem;" data-attachment-id="@image.Id" data-attachment-type="image">
-                                                <i class="bi bi-x"></i> Delete
-                                            </button>
-                                        </div>
+                                <div class="card">
+                                    <img src="@image.FilePath" class="card-img-top" style="height: 60px; object-fit: cover;" alt="@image.FileName">
+                                    <div class="card-body p-1">
+                                        <small class="text-muted d-block" style="font-size: 0.7rem; line-height: 1.1;">@image.FileName</small>
+                                        <small class="text-muted" style="font-size: 0.6rem;">@image.FileSize</small>
+                                        <button type="button" class="btn btn-sm btn-outline-danger float-end delete-attachment-btn" style="padding: 0.1rem 0.3rem; font-size: 0.7rem;" data-attachment-id="@image.Id" data-attachment-type="image">
+                                            <i class="bi bi-x"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -106,10 +100,10 @@
                                 </div>
                                 <div>
                                     <a href="@doc.FilePath" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                        View
+                                        <i class="bi bi-download"></i>
                                     </a>
                                     <button type="button" class="btn btn-sm btn-outline-danger delete-attachment-btn" data-attachment-id="@doc.Id" data-attachment-type="document">
-                                        Delete
+                                        <i class="bi bi-x"></i>
                                     </button>
                                 </div>
                             </div>

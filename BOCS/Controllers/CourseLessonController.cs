@@ -64,9 +64,7 @@ namespace BOCS.Controllers
                         SortOrder = l.SortOrder,
                         IsPublished = l.IsPublished,
                         CreatedAtUtc = l.CreatedAtUtc,
-                        IsPlay = l.IsPlay,
-                        ImageCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Image),
-                        FileCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Document)
+                        IsPlay = l.IsPlay
                     })
                     .ToListAsync()
             };
