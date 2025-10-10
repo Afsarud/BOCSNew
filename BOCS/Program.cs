@@ -37,12 +37,12 @@ builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login";
     options.LogoutPath = "/Account/Logout";
-    options.AccessDeniedPath = "/Account/AccessDenied";
-    options.SlidingExpiration = true;
+    options.SlidingExpiration = false;
     options.Cookie.HttpOnly = true;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
-    options.Cookie.SameSite = SameSiteMode.Lax;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.Cookie.SameSite = SameSiteMode.Strict;
 });
+
 
 if (builder.Environment.IsDevelopment())
 {
@@ -64,32 +64,34 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// ---------- Security headers + CSP (BEFORE static files) ----------
+// ---------- Security headers + CSP (ONE place, BEFORE static files) ----------
 app.Use(async (ctx, next) =>
 {
-    ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";
-    ctx.Response.Headers["X-Frame-Options"] = "DENY";
-    ctx.Response.Headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
-    ctx.Response.Headers["X-XSS-Protection"] = "0";
     ctx.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
     ctx.Response.Headers["Pragma"] = "no-cache";
-
-    var cspBase =
-        "default-src 'self'; " +
-        "img-src 'self' data: https://i.ytimg.com https:; " +
-        "style-src 'self' 'unsafe-inline'; " +
-        "font-src 'self' data:; " +
-        "script-src 'self' https://www.youtube.com https://www.gstatic.com https://www.youtube-nocookie.com; " +
-        "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; " +
-        "media-src 'self' blob:; " +
-        "worker-src 'self' blob:; ";
+    ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";
 
     if (app.Environment.IsDevelopment())
-        cspBase += "connect-src 'self' http://localhost:* https://localhost:* ws://localhost:* wss://localhost:*;";
+    {
+        ctx.Response.Headers["Content-Security-Policy"] =
+            "default-src 'self'; " +
+            "img-src 'self' data: https://i.ytimg.com https:; " +
+            "style-src 'self'; " +             
+            "script-src 'self'; " +             
+            "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; " +
+            "connect-src 'self' http://localhost:* https://localhost:* ws://localhost:* wss://localhost:*;";
+    }
     else
-        cspBase += "connect-src 'self';";
+    {
+        ctx.Response.Headers["Content-Security-Policy"] =
+            "default-src 'self'; " +
+            "img-src 'self' data: https://i.ytimg.com; " +
+            "style-src 'self'; " +
+            "script-src 'self'; " +
+            "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; " +
+            "connect-src 'self';";
+    }
 
-    ctx.Response.Headers["Content-Security-Policy"] = cspBase;
     await next();
 });
 
@@ -98,9 +100,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseAuthentication(); 
 app.UseMiddleware<BOCS.Middleware.SingleSessionMiddleware>();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

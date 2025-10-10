@@ -1,6 +1,5 @@
 wwwroot\css\Account.css
 wwwroot\css\course-lesson-manage.css
-wwwroot\css\Protect-course-info.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\banner.jpg
@@ -22,12 +21,10 @@ wwwroot\images\doc8.png
 wwwroot\images\logo.png
 wwwroot\images\logo1 (2).png
 wwwroot\images\logo1.png
-wwwroot\js\course-attachments-viewer.js
 wwwroot\js\course-info.bootstrap.js
 wwwroot\js\course-info.js
 wwwroot\js\course-lesson-manage.js
 wwwroot\js\course-play-guard.js
-wwwroot\js\lesson-management.js
 wwwroot\js\protect-course-info.js
 wwwroot\js\protect-courses-index.js
 wwwroot\js\single-tab-guard.js
@@ -92,16 +89,8 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\uploads\courses\39cf8d6fd4764722bd6eaf906dcf10cd.jpg
 wwwroot\uploads\courses\429be762e39848bcbab7520cbdd651a4.jpg
 wwwroot\uploads\courses\782d2795fed345de818729153ce6550c.jpg
-wwwroot\uploads\courses\862ff3876a3342389a87ce30840d0e96.png
 wwwroot\uploads\courses\a0017c5eca274b869b163c14128e4fb2.jpg
 wwwroot\uploads\courses\a4eac76386c84d3997001f183a2ee27e.jpg
 wwwroot\uploads\courses\d8a8c7e989bc4b28ba07891b174d65fc.jpg
 wwwroot\uploads\courses\ddd333ab30d34c1298bab3c325d34a30.jpg
 wwwroot\uploads\courses\e26492b64d8c4160983faaeca9e42705.jpg
-wwwroot\uploads\lesson-attachments\0cddfc4a-80fa-4264-bf02-89ddec009287_Adobe Express - file.png
-wwwroot\uploads\lesson-attachments\40be9d3f-5564-4bb7-8605-8e98a6f4f675__AdmitCard_RCWKMFKVFY.pdf
-wwwroot\uploads\lesson-attachments\6a0210e9-e7e2-451f-92db-7cdeb7b7736f_Adobe Express - file (1).png
-wwwroot\uploads\lesson-attachments\88830d0f-964d-4eda-ba2c-db29d2116982_Asif-Riaj-683x1024.png
-wwwroot\uploads\lesson-attachments\9649a421-e04f-41b5-8a98-635c8af24ac4_2.pdf
-wwwroot\uploads\lesson-attachments\ad539ed9-700f-4ce1-8c15-a9182411101d__AdmitCard_RCWKMFKVFY.pdf
-wwwroot\uploads\lesson-attachments\dedcb07f-3019-4dcd-8193-79dea6f697e5_1686cb79ad56cf9e26698c0d7d941ec8.jpg

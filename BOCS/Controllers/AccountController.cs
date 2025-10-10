@@ -49,21 +49,24 @@ namespace BOCS.Controllers
                     isPersistent: false,    
                     lockoutOnFailure: true  
                 );
-              
+
                 if (result.Succeeded)
                 {
+                    // Generate new session ID for single active session
                     var sessionId = Guid.NewGuid().ToString();
                     user.CurrentSessionId = sessionId;
                     await userManager.UpdateAsync(user);
-
+                    
+                    // Add session ID to claims
                     var claims = new List<Claim>
                     {
                         new Claim("SessionId", sessionId)
                     };
                     await signInManager.SignInWithClaimsAsync(user, isPersistent: false, claims);
-
+                    
                     return LocalRedirect(returnUrl ?? Url.Action("Index", "Home")!);
                 }
+
                 if (result.IsLockedOut)
                 {
                     ModelState.AddModelError(string.Empty, "Account locked. Please try later.");
@@ -79,6 +82,7 @@ namespace BOCS.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
+            // Clear session ID from database
             var userId = userManager.GetUserId(User);
             if (!string.IsNullOrEmpty(userId))
             {
@@ -89,6 +93,7 @@ namespace BOCS.Controllers
                     await userManager.UpdateAsync(user);
                 }
             }
+
             await signInManager.SignOutAsync();
             await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
@@ -100,6 +105,7 @@ namespace BOCS.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Logout(string? reason = null)
         {
+            // Clear session ID from database
             var userId = userManager.GetUserId(User);
             if (!string.IsNullOrEmpty(userId))
             {
@@ -110,6 +116,7 @@ namespace BOCS.Controllers
                     await userManager.UpdateAsync(user);
                 }
             }
+
             await signInManager.SignOutAsync();
             TempData["LogoutReason"] = reason;
             return RedirectToAction("Login", "Account");

@@ -1,10 +1,12 @@
-﻿using BOCS.Models;
+using BOCS.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace BOCS.Controllers
 {
+    [Authorize]
     public class SessionTestController : Controller
     {
         private readonly UserManager<Users> _userManager;
@@ -18,14 +20,14 @@ namespace BOCS.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var sessionIdClaim = User.FindFirstValue("SessionId");
-
+            
             var user = await _userManager.FindByIdAsync(userId);
-
+            
             ViewBag.UserId = userId;
             ViewBag.SessionIdClaim = sessionIdClaim;
             ViewBag.DatabaseSessionId = user?.CurrentSessionId;
             ViewBag.SessionMatch = sessionIdClaim == user?.CurrentSessionId;
-
+            
             return View();
         }
     }

@@ -1,4 +1,4 @@
-﻿using BOCS.Data;
+using BOCS.Data;
 using BOCS.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
@@ -27,7 +27,7 @@ namespace BOCS.Middleware
 
             // Skip session validation for login/logout pages to avoid redirect loops
             var path = context.Request.Path.Value?.ToLower();
-            if (path?.Contains("/account/login") == true ||
+            if (path?.Contains("/account/login") == true || 
                 path?.Contains("/account/logout") == true ||
                 path?.Contains("/account/register") == true)
             {
@@ -59,7 +59,7 @@ namespace BOCS.Middleware
                 // Check if session ID matches
                 if (user.CurrentSessionId != sessionIdClaim)
                 {
-                    _logger.LogInformation("Session ID mismatch for user {UserId}. Expected: {ExpectedSessionId}, Actual: {ActualSessionId}",
+                    _logger.LogInformation("Session ID mismatch for user {UserId}. Expected: {ExpectedSessionId}, Actual: {ActualSessionId}", 
                         userId, user.CurrentSessionId, sessionIdClaim);
                     await SignOutAndRedirect(context, signInManager);
                     return;
@@ -70,9 +70,9 @@ namespace BOCS.Middleware
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error in SingleSessionMiddleware for user {UserId}",
+                _logger.LogError(ex, "Error in SingleSessionMiddleware for user {UserId}", 
                     context.User.FindFirstValue(ClaimTypes.NameIdentifier));
-
+                
                 // On error, sign out to be safe
                 await SignOutAndRedirect(context, signInManager);
             }

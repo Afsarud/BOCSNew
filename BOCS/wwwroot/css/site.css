@@ -21,46 +21,6 @@ body {
   margin-bottom: 60px;
 }
 
-/* Navigation menu style */
-.navbar-nav .nav-item {
-    position: relative;
-    margin-right: 15px; /* Space between items */
-}
-
-/* Divider line after each menu item */
-.navbar-nav .nav-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -8px;
-    top: 25%;
-    height: 50%;
-    width: 1px;
-    background-color: #ccc; /* Divider color */
-}
-
-/* Hover effect - logo color */
-.navbar-nav .nav-link {
-    color: #333; /* Default color */
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff; /* Change to your logo color */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0d6efd; /* Bootstrap Primary / Logo Blue */
-}
-
-.navbar-nav .nav-link.active {
-    color: #0d6efd;
-    font-weight: bold;
-    border-bottom: 2px solid #0d6efd;
-}
-
-
 /* course-info */
 .lesson-item {
     cursor: pointer;

@@ -16,6 +16,8 @@ public class AdminEnrollmentsController : Controller
     {
         _db = db; _userManager = userManager;
     }
+
+    // GET /admin/enrollments?status=pending|approved|archived
     [HttpGet("")]
     public async Task<IActionResult> Index(string status = "pending")
     {
@@ -33,7 +35,7 @@ public class AdminEnrollmentsController : Controller
             await (from e in q
                    join u in _db.Users.AsNoTracking()
                         on e.StudentId equals u.Id into gj
-                   from u in gj.DefaultIfEmpty() 
+                   from u in gj.DefaultIfEmpty()   // LEFT JOIN
                    orderby e.CreatedAt descending
                    select new EnrollmentAdminItemVM
                    {
@@ -51,20 +53,21 @@ public class AdminEnrollmentsController : Controller
                        CreatedAt = e.CreatedAt,
                        IsApproved = e.IsApproved,
                        IsArchived = e.IsArchived,
-                       Tic = e.Tic 
+                       Tic = e.Tic  // 🔹 New field bind
                    }).ToListAsync();
 
         ViewBag.Status = status;
         return View(items);
     }
-    
+
+    // POST /admin/enrollments/{id}/remove
     [HttpPost("{id:int}/remove"), ValidateAntiForgeryToken]
     public async Task<IActionResult> Remove(int id, string? status)
     {
         var e = await _db.Enrollments.FirstOrDefaultAsync(x => x.Id == id);
         if (e == null) return NotFound();
 
-        _db.Enrollments.Remove(e); 
+        _db.Enrollments.Remove(e);           // HARD DELETE
         await _db.SaveChangesAsync();
 
         TempData["StatusMessage"] = "🗑️ Enrollment removed.";
@@ -77,8 +80,17 @@ public class AdminEnrollmentsController : Controller
         
         var e = await _db.Enrollments.FirstOrDefaultAsync(x => x.Id == id && !x.IsArchived);
         if (e == null) return NotFound();
-        e.Tic = tic; 
+
+        //if (!tic) // যদি tic=false আসে
+        //{
+        //    TempData["StatusMessage"] = "⚠️ You must set Tic before approving.";
+        //    return RedirectToAction(nameof(Index), new { status = status ?? "pending" });
+        //}
+
+        e.Tic = tic;    // এখানে true save হবে যখন টিক দেওয়া থাকবে
         e.IsApproved = true;
+
+        // সব lesson unlock করো
         var lessons = await _db.Lessons.Where(l => l.CourseId == e.CourseId).ToListAsync();
         foreach (var lesson in lessons)
             lesson.IsPlay = true;
@@ -88,7 +100,9 @@ public class AdminEnrollmentsController : Controller
         TempData["StatusMessage"] = "✅ Enrollment approved and lessons unlocked.";
         return RedirectToAction(nameof(Index), new { status = "pending" });
     }
-    
+
+
+    // POST /admin/enrollments/{id}/archive
     [HttpPost("{id:int}/archive"), ValidateAntiForgeryToken]
     public async Task<IActionResult> Archive(int id)
     {

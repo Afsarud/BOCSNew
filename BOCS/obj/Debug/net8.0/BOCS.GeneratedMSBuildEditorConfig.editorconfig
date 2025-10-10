@@ -9,195 +9,199 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BOCS
 build_property.RootNamespace = BOCS
-build_property.ProjectDir = C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\
+build_property.ProjectDir = D:\BOCSDevelopment\BOCS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS
+build_property.MSBuildProjectDirectory = D:\BOCSDevelopment\BOCS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/AboutUs/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/AboutUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Account/ChangePassword.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Account/Login.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Account/Register.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Account/VerifyEmail.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Account/VerifyEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/AdminEnrollments/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/AdminEnrollments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5FbnJvbGxtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseEnrollment/Enroll.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseEnrollment/Enroll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudFxFbnJvbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseEnrollment/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseEnrollment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseEnrollment/Info.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseEnrollment/Info.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlRW5yb2xsbWVudFxJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseLesson/Create.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseLesson/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseLesson/Delete.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseLesson/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseLesson/Edit.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseLesson/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseLesson/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseLesson/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseLesson/Manage.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseLesson/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlTGVzc29uXE1hbmFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CoursesAdmin/Create.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CoursesAdmin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CoursesAdmin/Delete.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CoursesAdmin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CoursesAdmin/Edit.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CoursesAdmin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CoursesAdmin/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CoursesAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CoursesAdmin/_CourseForm.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CoursesAdmin/_CourseForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc0FkbWluXF9Db3Vyc2VGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseSubjects/Courses.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseSubjects/Courses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcQ291cnNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseSubjects/Create.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseSubjects/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseSubjects/Delete.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseSubjects/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseSubjects/Edit.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseSubjects/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/CourseSubjects/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/CourseSubjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3ViamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Courses/CourseIndex.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Courses/CourseIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDb3Vyc2VJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Courses/Details.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Courses/Enroll.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Courses/Enroll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFbnJvbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Courses/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Courses/Info.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Courses/Info.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Home/Admin.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Home/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Home/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Home/Privacy.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Home/Teacher.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Home/Teacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/MyCourses/CompletedIndex.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/MyCourses/CompletedIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb3Vyc2VzXENvbXBsZXRlZEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/MyCourses/InProgressIndex.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/MyCourses/InProgressIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb3Vyc2VzXEluUHJvZ3Jlc3NJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/Components/StudentEnrolledMenu/Default.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/SessionTest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc2lvblRlc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BOCSDevelopment/BOCS/Views/Shared/Components/StudentEnrolledMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3R1ZGVudEVucm9sbGVkTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/Components/StudentInProgressMenu/Default.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/Components/StudentInProgressMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3R1ZGVudEluUHJvZ3Jlc3NNZW51XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/Error.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/_AccountLayout.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/_AccountLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/_CourseCard.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/_CourseCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db3Vyc2VDYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/_LoginPartial.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Students/Index.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/_ViewImports.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/_ViewStart.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Downloads/BocsLMS-main/BocsLMS-main/BOCS/Views/Shared/_Layout.cshtml]
+[D:/BOCSDevelopment/BOCS/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-37ez6rxpgi

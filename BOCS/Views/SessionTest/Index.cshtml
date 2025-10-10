@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "Session Test";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Session Information</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4"><strong>User ID:</strong></div>
+                        <div class="col-sm-8">@ViewBag.UserId</div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-4"><strong>Session ID (Claim):</strong></div>
+                        <div class="col-sm-8">
+                            <code>@ViewBag.SessionIdClaim</code>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-4"><strong>Session ID (Database):</strong></div>
+                        <div class="col-sm-8">
+                            <code>@ViewBag.DatabaseSessionId</code>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-4"><strong>Session Match:</strong></div>
+                        <div class="col-sm-8">
+                            @if (ViewBag.SessionMatch == true)
+                            {
+                                <span class="badge bg-success">✓ Valid Session</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">✗ Invalid Session</span>
+                            }
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5>How Single Session Works:</h5>
+                        <ol>
+                            <li>When you log in, a unique session ID is generated and stored in the database</li>
+                            <li>The session ID is also stored in your authentication claims</li>
+                            <li>On each request, the middleware checks if the session ID in your claims matches the one in the database</li>
+                            <li>If they don't match (because you logged in from another device), you'll be automatically signed out</li>
+                        </ol>
+                        
+                        <div class="alert alert-info mt-3">
+                            <strong>Test:</strong> Try logging in from another browser/device with the same account. 
+                            The first session will be invalidated and you'll be redirected to login.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
