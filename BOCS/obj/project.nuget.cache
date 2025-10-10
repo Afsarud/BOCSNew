@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySpVjyzpH5voipb3wXXNYmC/pgxRcbrVPJDBnKDknkXKy5hlAqDmboRlZ4ZA/wIufM9ygOzL4Qk+6Ok5LGdtow==",
+  "dgSpecHash": "1iVzIz1RyJrUt3j7kTIccqMtTfFMT5rZtiXuCfhYXIWW0j5EoftvE4UTVpdDTkX2QznjHYK0tOBxEPabWrlLgw==",
   "success": true,
-  "projectFilePath": "D:\\BOCSDevelopment\\BOCS\\BOCS.csproj",
+  "projectFilePath": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\BOCS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.45.0\\azure.core.1.45.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

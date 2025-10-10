@@ -11,13 +11,10 @@ namespace BOCS.Models
         public Course Course { get; set; } = default!;
         public string StudentId { get; set; } = default!;
         public bool IsApproved { get; set; } = false;
-
-        // পুরোনো/বন্ধ এনরোলমেন্ট hide করার জন্য
         public bool IsArchived { get; set; } = false;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public CourseAccessType AccessType { get; set; }
         public PaymentMethodType PaymentMethod { get; set; }
-
         [MaxLength(64)] public string? TransactionId { get; set; }
         [MaxLength(20)] public string? SenderNumber { get; set; }
         [MaxLength(20)] public string? MobileNumber { get; set; }

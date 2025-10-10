@@ -261,6 +261,36 @@ namespace BOCS.Migrations
                     b.ToTable("CourseSubjects", (string)null);
                 });
 
+            modelBuilder.Entity("BOCS.Models.LessonFile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("LessonId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonId");
+
+                    b.ToTable("LessonFiles");
+                });
+
             modelBuilder.Entity("BOCS.Models.Users", b =>
                 {
                     b.Property<string>("Id")
@@ -523,6 +553,17 @@ namespace BOCS.Migrations
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("BOCS.Models.LessonFile", b =>
+                {
+                    b.HasOne("BOCS.Models.CourseLesson", "Lesson")
+                        .WithMany("LessonFiles")
+                        .HasForeignKey("LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -586,6 +627,8 @@ namespace BOCS.Migrations
             modelBuilder.Entity("BOCS.Models.CourseLesson", b =>
                 {
                     b.Navigation("Attachments");
+
+                    b.Navigation("LessonFiles");
                 });
 
             modelBuilder.Entity("BOCS.Models.CourseSubject", b =>

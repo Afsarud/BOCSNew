@@ -3,15 +3,17 @@
     ViewData["Title"] = "Create Course";
 }
 <section class="container py-3">
-    <div class="card border-0 shadow-sm">
+    <div class="card border-0 shadow-sm mx-auto" style="max-width: 600px;">
+        <!-- ✅ Center card -->
         <div class="card-body">
-            <h4 class="mb-3">Create Course</h4>
+            <h4 class="mb-4 text-center">Create Course</h4>
+
             <form asp-action="Create" method="post" enctype="multipart/form-data">
                 @Html.AntiForgeryToken()
 
                 <div class="mb-3">
                     <label asp-for="Title" class="form-label"></label>
-                    <input asp-for="Title" class="form-control" style="width: 50% !important;" />
+                    <input asp-for="Title" class="form-control" />
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
 
@@ -32,8 +34,8 @@
                     <span asp-validation-for="PriceBdt" class="text-danger"></span>
                 </div>
 
-                <!-- ✅ নতুন: Course Type dropdown (1=Full, 2=Half) -->
-                <div class="mb-3" style="max-width: 320px;">
+                <!-- ✅ Course Type dropdown -->
+                <div class="mb-3">
                     <label asp-for="CourseType" class="form-label"></label>
                     <select asp-for="CourseType"
                             class="form-select"
@@ -43,14 +45,15 @@
                     <span asp-validation-for="CourseType" class="text-danger"></span>
                 </div>
 
-                <div class="mb-3" style="max-width: 420px;">
+                <!-- ✅ Thumbnail field same width -->
+                <div class="mb-3">
                     <label class="form-label">Thumbnail (JPG/PNG/WEBP, max 2MB)</label>
                     <input type="file" name="thumbnail" accept="image/*" class="form-control" />
                 </div>
 
-                <div class="d-flex gap-2">
-                    <button class="btn btn-primary" type="submit">Save</button>
-                    <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+                <div class="d-flex gap-2 justify-content-center mt-4">
+                    <button class="btn btn-primary px-4" type="submit">Save</button>
+                    <a class="btn btn-outline-secondary px-4" asp-action="Index">Cancel</a>
                 </div>
             </form>
         </div>

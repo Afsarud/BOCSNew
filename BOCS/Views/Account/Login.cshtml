@@ -14,7 +14,8 @@
         <form asp-action="Login" method="post" class="p-4 shadow rounded bg-white">
             @Html.AntiForgeryToken()
             <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
-            
+
+            @* Start user login check *@
             @if (TempData["LogoutReason"] != null)
             {
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -22,7 +23,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             }
-            
+
             @if (Context.Request.Query["reason"] == "session_expired")
             {
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -30,7 +31,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             }
-
+            @* End user login check *@
             <div class="mb-3">
                 <label asp-for="Email" class="form-label">Email address</label>
                 <input asp-for="Email" class="form-control" placeholder="Enter email" />
