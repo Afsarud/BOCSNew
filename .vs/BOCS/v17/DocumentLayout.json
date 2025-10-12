@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\BOCSDevelopment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\migrations\\20250924180838_adding tables.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|solutionrelative:bocs\\migrations\\20250924180838_adding tables.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|solutionrelative:bocs\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\views\\courses\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|solutionrelative:bocs\\views\\courses\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|solutionrelative:bocs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|solutionrelative:bocs\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5D90B14-4728-4D50-8976-E05C5E9A05AC}|BOCS\\BOCS.csproj|d:\\bocsdevelopment\\bocs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -35,38 +35,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250924180838_adding Tables.Designer.cs",
-              "DocumentMoniker": "D:\\BOCSDevelopment\\BOCS\\Migrations\\20250924180838_adding Tables.Designer.cs",
-              "RelativeDocumentMoniker": "BOCS\\Migrations\\20250924180838_adding Tables.Designer.cs",
-              "ToolTip": "D:\\BOCSDevelopment\\BOCS\\Migrations\\20250924180838_adding Tables.Designer.cs",
-              "RelativeToolTip": "BOCS\\Migrations\\20250924180838_adding Tables.Designer.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAIwBIAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T14:06:57.306Z",
+              "Title": "Info.cshtml",
+              "DocumentMoniker": "D:\\BOCSDevelopment\\BOCS\\Views\\Courses\\Info.cshtml",
+              "RelativeDocumentMoniker": "BOCS\\Views\\Courses\\Info.cshtml",
+              "ToolTip": "D:\\BOCSDevelopment\\BOCS\\Views\\Courses\\Info.cshtml",
+              "RelativeToolTip": "BOCS\\Views\\Courses\\Info.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-12T15:19:20.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\BOCSDevelopment\\BOCS\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BOCS\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\BOCSDevelopment\\BOCS\\Data\\AppDbContext.cs",
               "RelativeToolTip": "BOCS\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAQwA8AAABFAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAzwA8AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T14:06:12.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BOCSDevelopment\\BOCS\\Program.cs",
               "RelativeDocumentMoniker": "BOCS\\Program.cs",
               "ToolTip": "D:\\BOCSDevelopment\\BOCS\\Program.cs",
               "RelativeToolTip": "BOCS\\Program.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAABMAAAAoAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T14:03:12.127Z",
               "EditorCaption": ""
@@ -81,8 +81,7 @@
               "RelativeToolTip": "BOCS\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-12T14:02:29.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T14:02:29.011Z"
             }
           ]
         }
