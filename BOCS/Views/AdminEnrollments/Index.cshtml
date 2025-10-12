@@ -59,8 +59,7 @@
                             <td><code>@x.TransactionId</code></td>
                             <td>@x.SenderNumber</td>
                             <td class="text-end">৳ @x.Price.ToString("N0")</td>
-
-                            <!-- 🔹 Tic Checkbox -->
+                            
                             <td class="text-center">
                                 <form asp-action="ToggleTic" asp-route-id="@x.Id" method="post">
                                     @Html.AntiForgeryToken()
@@ -95,8 +94,7 @@
                                 {
                                     <span class="badge bg-secondary ms-1">Archived</span>
                                 }
-
-                                <!-- সব ট্যাবেই Remove থাকবে -->
+                                
                                 <form asp-action="Remove" asp-route-id="@x.Id" asp-route-status="@status"
                                       method="post" class="d-inline"
                                       onsubmit="return confirm('Remove this enrollment permanently?');">

@@ -10,6 +10,8 @@ namespace BOCS.ModelsView
         public bool IsPublished { get; set; }
         public bool IsPlay { get; set; }
         public DateTime? CreatedAtUtc { get; set; }
+        public int ImageCount { get; set; }
+        public int FileCount { get; set; }
     }
     public class TickDto
     {

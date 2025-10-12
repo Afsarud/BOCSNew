@@ -110,6 +110,35 @@ namespace BOCS.Controllers
                 .Select(l => new { l.Id, l.Title, l.YoutubeId, l.SubjectId, l.IsPlay })
                 .ToListAsync();
 
+            // Fetch all attachments for this course
+            var attachments = await _db.LessonAttachment
+                .Include(a => a.CourseLesson)
+                .Where(a => a.CourseLesson.CourseId == id)
+                .AsNoTracking()
+                .ToListAsync();
+            var courseImages = attachments
+        .Where(a => a.AttachmentType == AttachmentType.Image)
+        .Select(a => new AttachmentDisplayVM
+        {
+            Id = a.Id,
+            CourseLessonId = a.CourseLessonId,
+            FileName = a.AttatchmentName,
+            FilePath = a.RelativePath,
+            FileSize = GetFileSize(a.RelativePath)
+        })
+        .ToList();
+
+            var courseDocuments = attachments
+                .Where(a => a.AttachmentType == AttachmentType.Document)
+                .Select(a => new AttachmentDisplayVM
+                {
+                    Id = a.Id,
+                    CourseLessonId = a.CourseLessonId,
+                    FileName = a.AttatchmentName,
+                    FilePath = a.RelativePath,
+                    FileSize = GetFileSize(a.RelativePath)
+                })
+                .ToList();
             var subjects = await _db.Subjects.AsNoTracking()
                 .Where(s => s.CourseId == id && s.IsPublished)
                 .OrderBy(s => s.SortOrder)
@@ -123,7 +152,7 @@ namespace BOCS.Controllers
                 {
                     Title = s.Title,
                     Items = lessons.Where(x => x.SubjectId == s.Id)
-                                   .Select(x => new OutlineItemVM { Label = x.Title, YoutubeId = x.YoutubeId })
+                                   .Select(x => new OutlineItemVM { Label = x.Title, YoutubeId = x.YoutubeId, LessionId = x.Id.ToString() })
                                    .ToList()
                 });
             }
@@ -133,7 +162,7 @@ namespace BOCS.Controllers
                 outlines.Add(new OutlineGroupVM
                 {
                     Title = "Other lessons",
-                    Items = orphans.Select(x => new OutlineItemVM { Label = x.Title, YoutubeId = x.YoutubeId }).ToList()
+                    Items = orphans.Select(x => new OutlineItemVM { Label = x.Title, YoutubeId = x.YoutubeId, LessionId = x.Id.ToString() }).ToList()
                 });
             }
 
@@ -142,11 +171,12 @@ namespace BOCS.Controllers
                 .GroupBy(x => x.YoutubeId)
                 .ToDictionary(g => g.Key, g => g.Any(z => z.IsPlay));
 
+            //check the user is enrolled or not
+            var userId = _userManager.GetUserId(User);
+            ViewBag.isEnrolled = await _db.Enrollments.AnyAsync(p => p.CourseId == id & p.StudentId == userId && p.IsApproved == true);
+
             // প্রথম play-able yt id (থাকলে)
-            string? firstPlayableId = lessons
-                .Where(x => x.IsPlay)
-                .Select(x => x.YoutubeId)
-                .FirstOrDefault();
+            var firstPlayablelesson = lessons.Where(x => x.IsPlay).FirstOrDefault();
 
             return View(new CourseInfoVM
             {
@@ -158,11 +188,13 @@ namespace BOCS.Controllers
                 CreatedBy = "Admin",
                 Outlines = outlines,
                 // ভিউতে initialId হিসেবে আমরা আলাদা স্ক্রিপ্টে দেব
-                LatestYoutubeId = firstPlayableId
+                LatestYoutubeId = firstPlayablelesson?.YoutubeId.ToString(),
+                firstLessionId = firstPlayablelesson == null ? 0 : firstPlayablelesson.Id,
+                CourseImages = courseImages,
+                CourseDocuments = courseDocuments
             });
         }
-
-        [HttpGet]
+            [HttpGet]
         public async Task<IActionResult> Enroll(int id)
         {
             var course = await _db.Courses
@@ -230,6 +262,65 @@ namespace BOCS.Controllers
             var tz = TimeZoneInfo.FindSystemTimeZoneById("Asia/Dhaka");
             return TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz).Date;
         }
+        private string GetFileSize(string relativePath)
+        {
+            try
+            {
+                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath.TrimStart('/'));
+                if (System.IO.File.Exists(fullPath))
+                {
+                    var fileInfo = new FileInfo(fullPath);
+                    return FormatFileSize(fileInfo.Length);
+                }
+            }
+            catch { }
+            return "Unknown";
+        }
 
+        private string FormatFileSize(long bytes)
+        {
+            string[] sizes = { "B", "KB", "MB", "GB" };
+            double len = bytes;
+            int order = 0;
+            while (len >= 1024 && order < sizes.Length - 1)
+            {
+                order++;
+                len = len / 1024;
+            }
+            return $"{len:0.##} {sizes[order]}";
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLessonAttachments(int lessonId)
+        {
+            var attachments = await _db.LessonAttachment
+                .Where(a => a.CourseLessonId == lessonId)
+                .AsNoTracking()
+                .ToListAsync();
+
+            var images = attachments
+                .Where(a => a.AttachmentType == AttachmentType.Image)
+                .Select(a => new
+                {
+                    id = a.Id,
+                    fileName = a.AttatchmentName,
+                    filePath = a.RelativePath,
+                    fileSize = GetFileSize(a.RelativePath)
+                })
+                .ToList();
+
+            var documents = attachments
+                .Where(a => a.AttachmentType == AttachmentType.Document)
+                .Select(a => new
+                {
+                    id = a.Id,
+                    fileName = a.AttatchmentName,
+                    filePath = a.RelativePath,
+                    fileSize = GetFileSize(a.RelativePath)
+                })
+                .ToList();
+
+            return Json(new { images, documents });
+        }
     }
 }

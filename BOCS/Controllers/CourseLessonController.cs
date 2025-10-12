@@ -9,15 +9,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BOCS.Controllers
 {
-   // Admin only: manage lessons under a course
     [Authorize(Roles = "Admin,Teacher")]
     [Route("admin/course-lessons")]
-    [AutoValidateAntiforgeryToken] // POST এ টোকেন চাই
+    [AutoValidateAntiforgeryToken] 
     public class CourseLessonController : Controller
     {
         private readonly AppDbContext _db;
         private readonly FileUploadService _fileUploadService;
-        
+
         public CourseLessonController(AppDbContext db, FileUploadService fileUploadService)
         {
             _db = db;
@@ -41,7 +40,7 @@ namespace BOCS.Controllers
             return View("Index", courses); 
         }
 
-     
+
         [HttpGet("{courseId:int}", Name = "CourseLessons_Manage")]
         public async Task<IActionResult> Manage(int courseId)
         {
@@ -64,7 +63,9 @@ namespace BOCS.Controllers
                         SortOrder = l.SortOrder,
                         IsPublished = l.IsPublished,
                         CreatedAtUtc = l.CreatedAtUtc,
-                        IsPlay = l.IsPlay
+                        IsPlay = l.IsPlay,
+                        ImageCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Image),
+                        FileCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Document)
                     })
                     .ToListAsync()
             };
@@ -72,7 +73,7 @@ namespace BOCS.Controllers
             return View("Manage", vm);
         }
 
-        [HttpPost("tick")]   // POST /admin/course-lessons/tick?courseId=20
+        [HttpPost("tick")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Tick(int courseId, [FromBody] TickDto dto)
         {
@@ -132,11 +133,11 @@ namespace BOCS.Controllers
                     .OrderBy(s => s.SortOrder)
                     .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Title })
                     .ToListAsync();
-                
+
                 // Initialize attachment collections if they're null
                 vm.ExistingImages ??= new List<AttachmentDisplayVM>();
                 vm.ExistingDocuments ??= new List<AttachmentDisplayVM>();
-                
+
                 return View(vm);
             }
             var max = await _db.Lessons
@@ -241,7 +242,7 @@ namespace BOCS.Controllers
                 var lesson = await _db.Lessons
                     .Include(l => l.Attachments)
                     .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
-                
+
                 if (lesson != null)
                 {
                     vm.ExistingImages = _fileUploadService.GetAttachmentDisplayVMs(lesson.Images.ToList());
@@ -289,7 +290,7 @@ namespace BOCS.Controllers
             var attachment = await _db.LessonAttachment
                 .Include(a => a.CourseLesson)
                 .FirstOrDefaultAsync(a => a.Id == attachmentId);
-            
+
             if (attachment == null) return NotFound();
 
             var courseId = attachment.CourseLesson.CourseId;
@@ -304,6 +305,7 @@ namespace BOCS.Controllers
             TempData["StatusMessage"] = "🗑️ Attachment deleted successfully.";
             return RedirectToAction(nameof(Edit), new { courseId, id = attachment.CourseLessonId });
         }
+
 
         [HttpGet("{courseId:int}/delete/{id:int}")]
         public async Task<IActionResult> Delete(int courseId, int id)
@@ -323,29 +325,16 @@ namespace BOCS.Controllers
         [HttpPost("{courseId:int}/delete/{id:int}"), ValidateAntiForgeryToken, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int courseId, int id)
         {
-            var lesson = await _db.Lessons
-                .Include(l => l.Attachments)
+            var l = await _db.Lessons
                 .FirstOrDefaultAsync(x => x.Id == id && x.CourseId == courseId);
-            if (lesson == null) return NotFound();
+            if (l == null) return NotFound();
 
-            // Delete all associated attachments and their files
-            foreach (var attachment in lesson.Attachments)
-            {
-                _fileUploadService.DeleteFile(attachment.RelativePath);
-            }
-
-            // Remove attachments from database
-            _db.LessonAttachment.RemoveRange(lesson.Attachments);
-            
-            // Remove the lesson
-            _db.Lessons.Remove(lesson);
+            _db.Lessons.Remove(l);
             await _db.SaveChangesAsync();
 
             TempData["StatusMessage"] = "🗑️ Lesson deleted.";
             return RedirectToAction(nameof(Manage), new { courseId });
         }
-
-        //drag and drop start
 
         public class ReorderDto
         {
@@ -367,7 +356,7 @@ namespace BOCS.Controllers
                 return BadRequest("Mismatched ids");
 
             for (int i = 0; i < dto.Ids.Count; i++)
-                lessons.First(x => x.Id == dto.Ids[i]).SortOrder = i; // অথবা i+1
+                lessons.First(x => x.Id == dto.Ids[i]).SortOrder = i; 
 
             await _db.SaveChangesAsync();
             return Ok(new { updated = lessons.Count });

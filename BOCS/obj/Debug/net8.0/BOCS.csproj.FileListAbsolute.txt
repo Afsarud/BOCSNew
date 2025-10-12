@@ -576,299 +576,294 @@ E:\BOCSSoursetree\BOCS\BOCS\obj\Debug\net8.0\refint\BOCS.dll
 E:\BOCSSoursetree\BOCS\BOCS\obj\Debug\net8.0\BOCS.pdb
 E:\BOCSSoursetree\BOCS\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
 E:\BOCSSoursetree\BOCS\BOCS\obj\Debug\net8.0\ref\BOCS.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\appsettings.Development.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\appsettings.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.runtime.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.endpoints.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.exe
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.deps.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.runtimeconfig.json
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\BOCS.pdb
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Azure.Core.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Azure.Identity.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Humanizer.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.ClientModel.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.CodeDom.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Memory.Data.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Afsar\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.AssemblyReference.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.GeneratedMSBuildEditorConfig.editorconfig
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfoInputs.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfo.cs
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.CoreCompileInputs.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.MvcApplicationPartsAssemblyInfo.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cs
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\scopedcss\bundle\BOCS.styles.css
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\scopedcss\projectbundle\BOCS.bundle.scp.css
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.build.json
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.development.json
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.build.BOCS.props
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BOCS.props
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BOCS.props
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.Up2Date
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.dll
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\refint\BOCS.dll
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.pdb
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\ref\BOCS.dll
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-<<<<<<< HEAD
-D:\Afsar\BOCS\BOCS\obj\Debug\net8.0\BOCS.sourcelink.json
-=======
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\appsettings.Development.json
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\appsettings.json
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.runtime.json
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.exe
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.deps.json
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.runtimeconfig.json
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\BOCS.pdb
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Azure.Core.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Azure.Identity.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Humanizer.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.ClientModel.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.CodeDom.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Memory.Data.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Text.Json.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\BOCSDevelopment\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.csproj.AssemblyReference.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.GeneratedMSBuildEditorConfig.editorconfig
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfoInputs.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfo.cs
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.csproj.CoreCompileInputs.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.MvcApplicationPartsAssemblyInfo.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cs
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.sourcelink.json
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets.build.json
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets.development.json
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssets.props
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.build.BOCS.props
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BOCS.props
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BOCS.props
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\staticwebassets.pack.json
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\scopedcss\bundle\BOCS.styles.css
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\scopedcss\projectbundle\BOCS.bundle.scp.css
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.csproj.Up2Date
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.dll
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\refint\BOCS.dll
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.pdb
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
-D:\BOCSDevelopment\BOCS\obj\Debug\net8.0\ref\BOCS.dll
->>>>>>> 755cf2a07f811a8d57a94b93bf43b4ae940079cb
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\appsettings.Development.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\appsettings.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.runtime.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.endpoints.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.exe
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.deps.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.runtimeconfig.json
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\BOCS.pdb
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Azure.Core.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Azure.Identity.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Humanizer.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.ClientModel.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.CodeDom.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Memory.Data.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\X afsar\BOCS\BOCS\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.AssemblyReference.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.GeneratedMSBuildEditorConfig.editorconfig
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfoInputs.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfo.cs
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.CoreCompileInputs.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.MvcApplicationPartsAssemblyInfo.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cs
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\scopedcss\bundle\BOCS.styles.css
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\scopedcss\projectbundle\BOCS.bundle.scp.css
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.build.json
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.development.json
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssets.props
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.build.BOCS.props
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BOCS.props
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BOCS.props
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.pack.json
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.csproj.Up2Date
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.dll
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\refint\BOCS.dll
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.pdb
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
+D:\X afsar\BOCS\BOCS\BOCS\obj\Debug\net8.0\ref\BOCS.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.staticwebassets.runtime.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.exe
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.deps.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.runtimeconfig.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\BOCS.pdb
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Humanizer.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.AssemblyInfo.cs
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.RazorAssemblyInfo.cs
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.BOCS.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.build.BOCS.props
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BOCS.props
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BOCS.props
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\scopedcss\bundle\BOCS.styles.css
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\scopedcss\projectbundle\BOCS.bundle.scp.css
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.csproj.Up2Date
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\refint\BOCS.dll
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.pdb
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\BOCS.genruntimeconfig.cache
+C:\Users\User\Downloads\BocsLMS-main\BocsLMS-main\BOCS\obj\Debug\net8.0\ref\BOCS.dll

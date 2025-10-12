@@ -70,8 +70,26 @@
                         <input type="checkbox" class="chk-one" @(l.IsPlay ? "checked" : "") />
                     </td>
                     <td>@l.Title</td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        @if (l.ImageCount == 0)
+                        {
+                            <span class="text-muted">No images</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-info">@l.ImageCount image@(l.ImageCount == 1 ? "" : "s")</span>
+                        }
+                    </td>
+                    <td>
+                        @if (l.FileCount == 0)
+                        {
+                            <span class="text-muted">No files</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">@l.FileCount file@(l.FileCount == 1 ? "" : "s")</span>
+                        }
+                    </td>
                     <td><code class="text-danger">@l.YoutubeId</code></td>
                     <td>@(l.IsPublished ? "Yes" : "No")</td>
                     <td class="text-end">
