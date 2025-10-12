@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOCS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e006cd578bf8b080c18298b4d9b726492506307")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOCS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOCS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

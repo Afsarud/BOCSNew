@@ -19,13 +19,6 @@
     <link rel="icon" type="image/png" href="~/images/logo.png" />
     @RenderSection("Styles", required: false) 
 </head>
-
-<p>
-    Authenticated: @User.Identity?.IsAuthenticated, Roles:
-    @string.Join(",", ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims
-            .Where(c => c.Type == System.Security.Claims.ClaimTypes.Role)
-            .Select(c => c.Value))
-</p>
 <body class="@(isCoursesIndex ? "block-copy" : "")">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">

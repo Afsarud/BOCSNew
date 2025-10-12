@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\BOCS.csproj": {}
+    "D:\\BOCSDevelopment\\BOCS\\BOCS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\BOCS.csproj": {
+    "D:\\BOCSDevelopment\\BOCS\\BOCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\BOCS.csproj",
+        "projectUniqueName": "D:\\BOCSDevelopment\\BOCS\\BOCS.csproj",
         "projectName": "BOCS",
-        "projectPath": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\BOCS.csproj",
+        "projectPath": "D:\\BOCSDevelopment\\BOCS\\BOCS.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\obj\\",
+        "outputPath": "D:\\BOCSDevelopment\\BOCS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
