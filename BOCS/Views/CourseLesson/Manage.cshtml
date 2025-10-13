@@ -42,19 +42,20 @@
     <table class="table table-sm align-middle" id="lessonTable">
         <thead>
             <tr>
-                <th style="width:50px">#</th>
-                <th style="width:60px">Order</th>
+                <th style="width:15px">#</th>
+                <th style="width:50px">Order</th>
                 <!-- ✅ নতুন: master checkbox -->
                 <th style="width:60px" class="text-center">
                     <label class="form-check-label small">Tic</label>
                     <input id="chkAll" type="checkbox" class="form-check-input" />
                 </th>
-                <th>Title</th>
+                <th>Subject Name</th>
+                <th>Lesson Name</th>
                 <th>Images</th>
                 <th>Files</th>
-                <th style="width:180px">YouTube Id</th>
-                <th style="width:120px">Published</th>
-                <th style="width:140px" class="text-end">Actions</th>
+                <th style="width:120px">YouTube Id</th>
+                <th style="width:80px">Published</th>
+                <th style="width:120px" class="text-end">Actions</th>
             </tr>
         </thead>
         <tbody id="lessonTbody">
@@ -69,6 +70,7 @@
                     <td class="text-center">
                         <input type="checkbox" class="chk-one" @(l.IsPlay ? "checked" : "") />
                     </td>
+                    <td>@l.SubjectName</td>
                     <td>@l.Title</td>
                     <td>
                         @if (l.ImageCount == 0)

@@ -1,439 +1,439 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BOCS.bundle.scp.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\BOCS.bundle.scp.css",
       "PackagePath": "staticwebassets\\BOCS.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\css\\Account.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\css\\Account.css",
       "PackagePath": "staticwebassets\\css\\Account.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\css\\Protect-course-info.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\css\\Protect-course-info.css",
       "PackagePath": "staticwebassets\\css\\Protect-course-info.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\css\\course-lesson-manage.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\css\\course-lesson-manage.css",
       "PackagePath": "staticwebassets\\css\\course-lesson-manage.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\css\\site.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\favicon.ico",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\BOCS Logo.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\BOCS Logo.jpg",
       "PackagePath": "staticwebassets\\images\\BOCS Logo.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\banner.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\banner.jpg",
       "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\banner1.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\banner1.jpg",
       "PackagePath": "staticwebassets\\images\\banner1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc1.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc1.jpg",
       "PackagePath": "staticwebassets\\images\\doc1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc2.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc2.jpg",
       "PackagePath": "staticwebassets\\images\\doc2.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc3.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc3.jpg",
       "PackagePath": "staticwebassets\\images\\doc3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc3.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc3.png",
       "PackagePath": "staticwebassets\\images\\doc3.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc4.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc4.jpg",
       "PackagePath": "staticwebassets\\images\\doc4.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc4.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc4.png",
       "PackagePath": "staticwebassets\\images\\doc4.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc5.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc5.jpg",
       "PackagePath": "staticwebassets\\images\\doc5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc5.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc5.png",
       "PackagePath": "staticwebassets\\images\\doc5.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc6.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc6.jpg",
       "PackagePath": "staticwebassets\\images\\doc6.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc6.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc6.png",
       "PackagePath": "staticwebassets\\images\\doc6.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc7.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc7.jpg",
       "PackagePath": "staticwebassets\\images\\doc7.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc8.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc8.jpg",
       "PackagePath": "staticwebassets\\images\\doc8.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\doc8.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\doc8.png",
       "PackagePath": "staticwebassets\\images\\doc8.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\logo.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\logo1 (2).png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\logo1 (2).png",
       "PackagePath": "staticwebassets\\images\\logo1 (2).png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\images\\logo1.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\images\\logo1.png",
       "PackagePath": "staticwebassets\\images\\logo1.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\course-attachments-viewer.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\course-attachments-viewer.js",
       "PackagePath": "staticwebassets\\js\\course-attachments-viewer.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\course-info.bootstrap.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\course-info.bootstrap.js",
       "PackagePath": "staticwebassets\\js\\course-info.bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\course-info.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\course-info.js",
       "PackagePath": "staticwebassets\\js\\course-info.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\course-lesson-manage.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\course-lesson-manage.js",
       "PackagePath": "staticwebassets\\js\\course-lesson-manage.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\course-play-guard.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\course-play-guard.js",
       "PackagePath": "staticwebassets\\js\\course-play-guard.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\lesson-management.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\lesson-management.js",
       "PackagePath": "staticwebassets\\js\\lesson-management.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\protect-course-info.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\protect-course-info.js",
       "PackagePath": "staticwebassets\\js\\protect-course-info.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\protect-courses-index.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\protect-courses-index.js",
       "PackagePath": "staticwebassets\\js\\protect-courses-index.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\single-tab-guard.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\single-tab-guard.js",
       "PackagePath": "staticwebassets\\js\\single-tab-guard.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\js\\site.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\5604e9f5715b48cca922176cb03c19f7.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\5604e9f5715b48cca922176cb03c19f7.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\5604e9f5715b48cca922176cb03c19f7.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\74d85877681b4a3bbb6e87f04069bdc9.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\74d85877681b4a3bbb6e87f04069bdc9.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\74d85877681b4a3bbb6e87f04069bdc9.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\782d2795fed345de818729153ce6550c.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\782d2795fed345de818729153ce6550c.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\782d2795fed345de818729153ce6550c.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\8616f89325f94884a7eaf214745d280a.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\8616f89325f94884a7eaf214745d280a.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\8616f89325f94884a7eaf214745d280a.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\baf64ace17804c7685c2e1326ceb21f5.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\baf64ace17804c7685c2e1326ceb21f5.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\baf64ace17804c7685c2e1326ceb21f5.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\c25ef02e355d4ca683c798f79c2d6ff3.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\c25ef02e355d4ca683c798f79c2d6ff3.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\c25ef02e355d4ca683c798f79c2d6ff3.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\d8a8c7e989bc4b28ba07891b174d65fc.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\d8a8c7e989bc4b28ba07891b174d65fc.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\d8a8c7e989bc4b28ba07891b174d65fc.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\dc7364c6f4b2461dada64390c29c0aac.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\dc7364c6f4b2461dada64390c29c0aac.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\dc7364c6f4b2461dada64390c29c0aac.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\e26492b64d8c4160983faaeca9e42705.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\e26492b64d8c4160983faaeca9e42705.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\e26492b64d8c4160983faaeca9e42705.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\courses\\e48e18a85e684c5fa38b73b803826708.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\courses\\e48e18a85e684c5fa38b73b803826708.jpg",
       "PackagePath": "staticwebassets\\uploads\\courses\\e48e18a85e684c5fa38b73b803826708.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\0cddfc4a-80fa-4264-bf02-89ddec009287_Adobe Express - file.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\0cddfc4a-80fa-4264-bf02-89ddec009287_Adobe Express - file.png",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\0cddfc4a-80fa-4264-bf02-89ddec009287_Adobe Express - file.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\40be9d3f-5564-4bb7-8605-8e98a6f4f675__AdmitCard_RCWKMFKVFY.pdf",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\40be9d3f-5564-4bb7-8605-8e98a6f4f675__AdmitCard_RCWKMFKVFY.pdf",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\40be9d3f-5564-4bb7-8605-8e98a6f4f675__AdmitCard_RCWKMFKVFY.pdf"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\6a0210e9-e7e2-451f-92db-7cdeb7b7736f_Adobe Express - file (1).png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\6a0210e9-e7e2-451f-92db-7cdeb7b7736f_Adobe Express - file (1).png",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\6a0210e9-e7e2-451f-92db-7cdeb7b7736f_Adobe Express - file (1).png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\88830d0f-964d-4eda-ba2c-db29d2116982_Asif-Riaj-683x1024.png",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\88830d0f-964d-4eda-ba2c-db29d2116982_Asif-Riaj-683x1024.png",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\88830d0f-964d-4eda-ba2c-db29d2116982_Asif-Riaj-683x1024.png"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\9649a421-e04f-41b5-8a98-635c8af24ac4_2.pdf",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\9649a421-e04f-41b5-8a98-635c8af24ac4_2.pdf",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\9649a421-e04f-41b5-8a98-635c8af24ac4_2.pdf"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\ad539ed9-700f-4ce1-8c15-a9182411101d__AdmitCard_RCWKMFKVFY.pdf",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\ad539ed9-700f-4ce1-8c15-a9182411101d__AdmitCard_RCWKMFKVFY.pdf",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\ad539ed9-700f-4ce1-8c15-a9182411101d__AdmitCard_RCWKMFKVFY.pdf"
     },
     {
-      "Id": "C:\\Users\\User\\Downloads\\BocsLMS-main\\BocsLMS-main\\BOCS\\wwwroot\\uploads\\lesson-attachments\\dedcb07f-3019-4dcd-8193-79dea6f697e5_1686cb79ad56cf9e26698c0d7d941ec8.jpg",
+      "Id": "D:\\BOCSDevelopment\\BOCS\\wwwroot\\uploads\\lesson-attachments\\dedcb07f-3019-4dcd-8193-79dea6f697e5_1686cb79ad56cf9e26698c0d7d941ec8.jpg",
       "PackagePath": "staticwebassets\\uploads\\lesson-attachments\\dedcb07f-3019-4dcd-8193-79dea6f697e5_1686cb79ad56cf9e26698c0d7d941ec8.jpg"
     },
     {

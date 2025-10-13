@@ -12,6 +12,7 @@ namespace BOCS.ModelsView
         public DateTime? CreatedAtUtc { get; set; }
         public int ImageCount { get; set; }
         public int FileCount { get; set; }
+        public string SubjectName { get; set; } = string.Empty;
     }
     public class TickDto
     {

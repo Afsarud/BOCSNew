@@ -1,4 +1,11 @@
-﻿.disabled-lesson {
+﻿body {
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+.disabled-lesson {
     opacity: .55;
     cursor: not-allowed;
 }

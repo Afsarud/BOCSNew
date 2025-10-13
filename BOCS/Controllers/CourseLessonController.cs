@@ -53,6 +53,7 @@ namespace BOCS.Controllers
                 CourseId = course.Id,
                 CourseTitle = course.Title,
                 Lessons = await _db.Lessons
+                    .Include(l => l.Subject)
                     .Where(l => l.CourseId == courseId)
                     .OrderBy(l => l.SortOrder)
                     .Select(l => new LessonItemVM
@@ -65,7 +66,8 @@ namespace BOCS.Controllers
                         CreatedAtUtc = l.CreatedAtUtc,
                         IsPlay = l.IsPlay,
                         ImageCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Image),
-                        FileCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Document)
+                        FileCount = l.Attachments.Count(a => a.AttachmentType == AttachmentType.Document),
+                        SubjectName = l.Subject != null ? l.Subject.Title : "—" // ✅ নতুন ফিল্ড
                     })
                     .ToListAsync()
             };
