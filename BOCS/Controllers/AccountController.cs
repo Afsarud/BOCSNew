@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace BOCS.Controllers
@@ -35,11 +36,18 @@ namespace BOCS.Controllers
         public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
             if (!ModelState.IsValid) return View(model);
+            
 
             var loginId = model.Email?.Trim();
 
             var user = await userManager.FindByEmailAsync(loginId)
                        ?? await userManager.FindByNameAsync(loginId);
+
+            if (user != null && !user.IsActive)
+            {
+                ModelState.AddModelError(string.Empty, "This account is inactive. Please contact administrator.");
+                return View(model);
+            }
 
             if (user != null)
             {
@@ -169,7 +177,102 @@ namespace BOCS.Controllers
 
             return RedirectToAction("Login", "Account");
         }
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> UserList(string search)
+        {
+            var usersQuery = userManager.Users.AsQueryable();
+            if (!string.IsNullOrEmpty(search))
+            {
+                search = search.Trim().ToLower();
+                usersQuery = usersQuery.Where(u =>
+                    u.FullName.ToLower().Contains(search) ||
+                    u.Email.ToLower().Contains(search) ||
+                    u.Role.ToLower().Contains(search));
+            }
 
+            var users = await usersQuery
+                .Select(u => new
+                {
+                    u.Id,
+                    u.FullName,
+                    u.Email,
+                    u.Role,
+                    u.CreatedDate,
+                    u.IsActive
+                })
+                .ToListAsync();
+            ViewData["CurrentFilter"] = search;
+
+            return View(users);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> ToggleUserStatus(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            // Toggle Active/Inactive
+            user.IsActive = !user.IsActive;
+            await userManager.UpdateAsync(user);
+
+            return RedirectToAction("UserList");
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> EditUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            var model = new RegisterViewModel
+            {
+                Name = user.FullName,
+                Email = user.Email,
+                Role = user.Role
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> EditUser(string id, RegisterViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            user.FullName = model.Name;
+            user.Email = model.Email;
+            user.UserName = model.Email;
+            user.Role = model.Role;
+
+            var result = await userManager.UpdateAsync(user);
+            if (result.Succeeded)
+                return RedirectToAction("UserList");
+
+            foreach (var error in result.Errors)
+                ModelState.AddModelError("", error.Description);
+
+            return View(model);
+        }
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            await userManager.DeleteAsync(user);
+            return RedirectToAction("UserList");
+        }
         [HttpGet]
         public IActionResult VerifyEmail() => View(new VerifyEmailViewModel());
 

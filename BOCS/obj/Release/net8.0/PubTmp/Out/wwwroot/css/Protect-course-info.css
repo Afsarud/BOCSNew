@@ -1,4 +1,11 @@
-﻿.disabled-lesson {
+﻿body {
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+.disabled-lesson {
     opacity: .55;
     cursor: not-allowed;
 }
@@ -12,3 +19,67 @@
     background: transparent;
     z-index: 20;
 }
+
+/* ===== Subject (Accordion Header) ===== */
+.accordion-button {
+    background-color: #e6f0ff; /* Light blue background */
+    color: #000000; /* Black text */
+    font-weight: 600;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* When subject is open */
+    .accordion-button:not(.collapsed) {
+        background-color: #cfe2ff; /* Slightly deeper blue when expanded */
+        color: #000000;
+        box-shadow: none;
+        border-radius: 8px 8px 0 0; /* Keep top rounded when open */
+    }
+
+    /* Hover effect for subject */
+    .accordion-button:hover {
+        background-color: #d9e8ff; /* Subtle hover shade */
+    }
+
+/* Accordion item wrapper */
+.accordion-item {
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 10px; /* Smooth rounding around item */
+    overflow: hidden; /* Keeps inner corners aligned */
+}
+
+/* ===== Lesson Item Styles ===== */
+.lesson-item {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #0000ff; /* Blue border */
+    border-radius: 6px; /* Rounded corners */
+    padding: 10px 15px;
+    margin: 5px 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+    /* Hover effect for lessons */
+    .lesson-item:hover {
+        background-color: #dcdcdc; /* Slightly darker gray on hover */
+        border-color: #1e1e7b; /* Darker blue border on hover */
+        cursor: pointer;
+    }
+
+    /* Active lesson */
+    .lesson-item.active {
+        background-color: #c0c0c0;
+        border-color: #0000ff;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    /* Disabled lessons */
+    .lesson-item.disabled-lesson {
+        background-color: #e9e9e9;
+        border-color: #cccccc;
+        color: #999999;
+        cursor: not-allowed;
+        pointer-events: none;
+    }

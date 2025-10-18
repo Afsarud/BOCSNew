@@ -9,8 +9,8 @@ namespace BOCS.ModelsView
         public string Email { get; set; }
 
         [Required(ErrorMessage = "New Password is required!")]
-        [StringLength(12, MinimumLength = 6,
-            ErrorMessage = "The {0} must be at least {2} and at most {1} characters long.")]
+        //[StringLength(12, MinimumLength = 6,
+        //    ErrorMessage = "The {0} must be at least {2} and at most {1} characters long.")]
         [DataType(DataType.Password)]
         [Display(Name = "New Password")]
         [Compare("ConfirmPassword", ErrorMessage = "Passwords do not match!")]
