@@ -164,6 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
       titleEl.textContent = subject && lesson ? `${subject} | ${lesson}` : "";
   }
 
+    const video = document.getElementById('player');
+    const seekBar = document.getElementById('seekBar');
+
   // ==== Custom Controls ====
   document
     .getElementById("customPlay")
@@ -211,6 +214,51 @@ document.addEventListener("DOMContentLoaded", () => {
       updateAttachments(lessonId);
     }
   }
+
+});
+
+// =============================
+// 🎬 YouTube-style Seek Bar Integration
+// =============================
+document.addEventListener("DOMContentLoaded", () => {
+    const seekBar = document.getElementById("seekBar");
+
+    // প্রতি সেকেন্ডে progress update হবে
+    setInterval(() => {
+        if (player && typeof player.getDuration === "function") {
+            const duration = player.getDuration();
+            const current = player.getCurrentTime();
+
+            if (duration > 0) {
+                seekBar.max = duration;
+                seekBar.value = current;
+            }
+        }
+    }, 500); // প্রতি 0.5 সেকেন্ডে আপডেট
+
+    // ইউজার যখন বার টেনে নেয়
+    seekBar.addEventListener("input", () => {
+        if (player && typeof player.seekTo === "function") {
+            const newTime = parseFloat(seekBar.value);
+            player.seekTo(newTime, true);
+        }
+    });
+});
+
+let wasPlaying = false;
+
+seekBar.addEventListener("mousedown", () => {
+    if (player && player.getPlayerState() === YT.PlayerState.PLAYING) {
+        wasPlaying = true;
+        player.pauseVideo();
+    }
+});
+
+seekBar.addEventListener("mouseup", () => {
+    if (wasPlaying) {
+        player.playVideo();
+        wasPlaying = false;
+    }
 });
 
 // Function to update attachments for a lesson
