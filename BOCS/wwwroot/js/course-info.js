@@ -44,32 +44,114 @@ if (!START_ID) {
     }
 }
 
-let player = null;
+// utility
+function pad2(n) { return String(Math.floor(n)).padStart(2, '0'); }
+function fmtTime(sec) {
+    sec = Math.max(0, sec | 0);
+    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+    return h > 0 ? `${h}:${pad2(m)}:${pad2(s)}` : `${pad2(m)}:${pad2(s)}`;
+}
 
+let player = null;
 function onYouTubeIframeAPIReady() {
     const vid = START_ID || "FIP2u36DI1w";
     player = new YT.Player("player", {
         videoId: vid,
-        playerVars: {
-            modestbranding: 1,
-            rel: 0,
-            controls: 0,
-            disablekb: 1,
-            iv_load_policy: 3,
-            fs: 0,
-            playsinline: 1,
-        },
+        playerVars: { modestbranding: 1, rel: 0, controls: 0, disablekb: 1, iv_load_policy: 3, fs: 0, playsinline: 1 },
         events: {
             onReady: (e) => {
+                try { e.target.playVideo(); } catch { }
+                // populate playback rates once ready
                 try {
-                    e.target.playVideo();
+                    const rates = e.target.getAvailablePlaybackRates() || [0.5, 1, 1.25, 1.5, 2, 3];
+                    const sel = document.getElementById("speedSelect");
+                    sel.innerHTML = rates.map(r => `<option value="${r}">${r}x</option>`).join("");
+                    sel.value = (e.target.getPlaybackRate?.() || 1).toString();
                 } catch { }
             },
         },
     });
 }
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+// ---- existing lesson click handler stays the same ----
+// One DOMContentLoaded block to wire everything safely
+document.addEventListener("DOMContentLoaded", () => {
+    // (existing: set initial title, bind basic buttons, load initial attachments) ...
 
+    // ===== Seek bar wiring + live time updates =====
+    const seekBar = document.getElementById("seekBar");
+    const timeDisplay = document.getElementById("timeDisplay");
+    const minuteDisplay = document.getElementById("minuteDisplay");
+
+    let wasPlaying = false;
+
+    // update progress + time every 0.5s
+    setInterval(() => {
+        if (!player || typeof player.getDuration !== "function") return;
+        const duration = player.getDuration() || 0;
+        const current = player.getCurrentTime() || 0;
+
+        // progress bar
+        if (duration > 0) {
+            seekBar.max = duration;
+            if (document.activeElement !== seekBar) {
+                // don't fight the user's drag
+                seekBar.value = current;
+            }
+        }
+
+        // time readouts
+        if (timeDisplay) timeDisplay.textContent = `${fmtTime(current)} / ${fmtTime(duration)}`;
+        if (minuteDisplay) minuteDisplay.textContent =
+            `${(current / 60).toFixed(1)}m / ${(duration / 60).toFixed(1)}m`;
+    }, 500);
+
+    // dragging behavior: pause while dragging, resume if it was playing
+    seekBar.addEventListener("mousedown", () => {
+        if (player && player.getPlayerState() === YT.PlayerState.PLAYING) {
+            wasPlaying = true;
+            player.pauseVideo();
+        }
+    });
+    seekBar.addEventListener("mouseup", () => {
+        if (wasPlaying) {
+            player.playVideo();
+            wasPlaying = false;
+        }
+    });
+    // seek when user drags
+    seekBar.addEventListener("input", () => {
+        if (player && typeof player.seekTo === "function") {
+            const newTime = parseFloat(seekBar.value);
+            player.seekTo(newTime, true);
+        }
+    });
+
+    // ===== Playback rate controls =====
+    const speedSelect = document.getElementById("speedSelect");
+    document.getElementById("speedDown")?.addEventListener("click", () => {
+        if (!player) return;
+        const rates = player.getAvailablePlaybackRates?.() || [0.5, 1, 1.25, 1.5, 2, 3];
+        const cur = player.getPlaybackRate?.() || 1;
+        const idx = Math.max(0, rates.findIndex(r => r === cur) - 1);
+        player.setPlaybackRate?.(rates[idx]);
+        if (speedSelect) speedSelect.value = rates[idx].toString();
+    });
+
+    document.getElementById("speedUp")?.addEventListener("click", () => {
+        if (!player) return;
+        const rates = player.getAvailablePlaybackRates?.() || [0.5, 1, 1.25, 1.5, 2, 3];
+        const cur = player.getPlaybackRate?.() || 1;
+        const idx = Math.min(rates.length - 1, rates.findIndex(r => r === cur) + 1);
+        player.setPlaybackRate?.(rates[idx]);
+        if (speedSelect) speedSelect.value = rates[idx].toString();
+    });
+
+    speedSelect?.addEventListener("change", (e) => {
+        const v = parseFloat(e.target.value);
+        if (player && !Number.isNaN(v)) player.setPlaybackRate?.(v);
+    });
+});
 function idByIndex(idx) {
     const i = parseInt(idx, 10);
     if (Number.isNaN(i) || i < 0 || i >= LESSON_IDS.length) return "";
