@@ -15,22 +15,17 @@ namespace BOCS.ModelsView
         public string YoutubeUrlOrId { get; set; } = "";
 
         [Display(Name = "Sort order")]
-        //public int SortOrder { get; set; } = 0;
         public int SortOrder { get; set; }
 
         [Display(Name = "Published")]
         public bool IsPublished { get; set; } = true;
-        // ✅ নতুন subject
         public int? SubjectId { get; set; }
 
-        // File upload properties
         [Display(Name = "Lesson Images")]
         public IFormFileCollection? LessonImages { get; set; }
 
         [Display(Name = "Lesson Documents")]
         public IFormFileCollection? LessonDocuments { get; set; }
-
-        // For displaying existing attachments
         public List<AttachmentDisplayVM> ExistingImages { get; set; } = new();
         public List<AttachmentDisplayVM> ExistingDocuments { get; set; } = new();
     }

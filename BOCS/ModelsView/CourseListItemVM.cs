@@ -9,6 +9,6 @@
         public string? ThumbnailUrl { get; set; }
         public bool IsEnrolled { get; set; }
         public bool IsActive { get; set; } = true;
-        public bool IsNew { get; set; }  // চাইলে “New” ব্যাজের জন্য
+        public bool IsNew { get; set; }
     }
 }

@@ -17,7 +17,6 @@ namespace BOCS.ModelsView
         public string? MobileNumber { get; set; }
         public decimal Price { get; set; }
         public DateTime CreatedAt { get; set; }
-        //20092025
         public int CourseDurationDays { get; set; }
 
         [Column(TypeName = "date")]
@@ -29,7 +28,6 @@ namespace BOCS.ModelsView
         [DataType(DataType.Date)]
         [Display(Name = "End date")]
         public DateTime EndDate { get; set; }
-        //End
         public bool IsApproved { get; set; }
         public bool IsArchived { get; set; }
         public bool Tic { get; set; }

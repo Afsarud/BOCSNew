@@ -19,67 +19,69 @@ img {
     background: transparent;
     z-index: 20;
 }
-
-/* ===== Subject (Accordion Header) ===== */
+/* Subject (Accordion Header) */
 .accordion-button {
-    background-color: #e6f0ff; /* Light blue background */
-    color: #000000; /* Black text */
+    background-color: #e6f0ff; 
+    color: #000000;
     font-weight: 600;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
     /* When subject is open */
     .accordion-button:not(.collapsed) {
-        background-color: #cfe2ff; /* Slightly deeper blue when expanded */
+        background-color: #cfe2ff;
         color: #000000;
         box-shadow: none;
-        border-radius: 8px 8px 0 0; /* Keep top rounded when open */
+        border-radius: 8px 8px 0 0; 
     }
 
-    /* Hover effect for subject */
     .accordion-button:hover {
-        background-color: #d9e8ff; /* Subtle hover shade */
+        background-color: #d9e8ff;
     }
 
-/* Accordion item wrapper */
+/*Accordion item wrapper */
 .accordion-item {
     border: none;
     margin-bottom: 8px;
-    border-radius: 10px; /* Smooth rounding around item */
-    overflow: hidden; /* Keeps inner corners aligned */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/* ===== Lesson Item Styles ===== */
-.lesson-item {
-    background-color: #f0f0f0; /* Light gray background */
-    border: 1px solid #0000ff; /* Blue border */
-    border-radius: 6px; /* Rounded corners */
-    padding: 10px 15px;
+/*Lesson Item Styles */
+.lesson-item {   
+    border: 1px solid #0000ff;
+    border-radius: 4px;
+    padding: 10px 10px;
     margin: 5px 10px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-    /* Hover effect for lessons */
-    .lesson-item:hover {
-        background-color: #dcdcdc; /* Slightly darker gray on hover */
-        border-color: #1e1e7b; /* Darker blue border on hover */
-        cursor: pointer;
-    }
 
-    /* Active lesson */
-    .lesson-item.active {
-        background-color: #c0c0c0;
-        border-color: #0000ff;
-        font-weight: bold;
-        color: #000000;
-    }
+#seekBar {
+    appearance: none;
+    height: 6px;
+    background: #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
 
-    /* Disabled lessons */
-    .lesson-item.disabled-lesson {
-        background-color: #e9e9e9;
-        border-color: #cccccc;
-        color: #999999;
-        cursor: not-allowed;
-        pointer-events: none;
-    }
+#seekBar:hover {
+    background: #aaa;
+}
+
+#seekBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#seekBar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}

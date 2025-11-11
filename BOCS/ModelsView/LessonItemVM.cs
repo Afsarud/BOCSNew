@@ -17,6 +17,6 @@ namespace BOCS.ModelsView
     public class TickDto
     {
         public List<int> Ids { get; set; } = new();
-        public bool Value { get; set; }     // true = 1, false = 0
+        public bool Value { get; set; }
     }
 }

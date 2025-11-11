@@ -1,5 +1,4 @@
-﻿// ========== course-info.js ==========
-function readJsonFromScript(id, fallback) {
+﻿function readJsonFromScript(id, fallback) {
     const el = document.getElementById(id);
     if (!el) return fallback;
     try {
@@ -43,8 +42,6 @@ if (!START_ID) {
         firstPlayable.classList.add("active");
     }
 }
-
-// utility
 function pad2(n) { return String(Math.floor(n)).padStart(2, '0'); }
 function fmtTime(sec) {
     sec = Math.max(0, sec | 0);
@@ -73,40 +70,27 @@ function onYouTubeIframeAPIReady() {
     });
 }
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
-// ---- existing lesson click handler stays the same ----
 // One DOMContentLoaded block to wire everything safely
 document.addEventListener("DOMContentLoaded", () => {
-    // (existing: set initial title, bind basic buttons, load initial attachments) ...
-
-    // ===== Seek bar wiring + live time updates =====
     const seekBar = document.getElementById("seekBar");
     const timeDisplay = document.getElementById("timeDisplay");
     const minuteDisplay = document.getElementById("minuteDisplay");
 
     let wasPlaying = false;
-
-    // update progress + time every 0.5s
     setInterval(() => {
         if (!player || typeof player.getDuration !== "function") return;
         const duration = player.getDuration() || 0;
         const current = player.getCurrentTime() || 0;
-
-        // progress bar
         if (duration > 0) {
             seekBar.max = duration;
             if (document.activeElement !== seekBar) {
-                // don't fight the user's drag
                 seekBar.value = current;
             }
         }
-
-        // time readouts
         if (timeDisplay) timeDisplay.textContent = `${fmtTime(current)} / ${fmtTime(duration)}`;
         if (minuteDisplay) minuteDisplay.textContent =
             `${(current / 60).toFixed(1)}m / ${(duration / 60).toFixed(1)}m`;
     }, 500);
-
-    // dragging behavior: pause while dragging, resume if it was playing
     seekBar.addEventListener("mousedown", () => {
         if (player && player.getPlayerState() === YT.PlayerState.PLAYING) {
             wasPlaying = true;
@@ -119,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
             wasPlaying = false;
         }
     });
-    // seek when user drags
     seekBar.addEventListener("input", () => {
         if (player && typeof player.seekTo === "function") {
             const newTime = parseFloat(seekBar.value);
@@ -158,9 +141,7 @@ function idByIndex(idx) {
     return LESSON_IDS[i] || "";
 }
 
-// =============================
 // 📌 LESSON CLICK HANDLER (MAIN PART)
-// =============================
 document.addEventListener("click", function (e) {
     const li = e.target.closest(".lesson-item");
     if (!li) return;
@@ -175,36 +156,29 @@ document.addEventListener("click", function (e) {
     const ytId = toYtId(direct || byIdx);
     if (!ytId) return;
 
-    // Remove old active
     document
         .querySelectorAll(".lesson-item.active")
         .forEach((x) => x.classList.remove("active"));
     li.classList.add("active");
-
-    // Update lesson title
     const subject = li.getAttribute("data-subject") || "";
     const lesson = li.getAttribute("data-lesson") || "";
     const titleEl = document.getElementById("lessonTitle");
     if (titleEl)
         titleEl.textContent = subject && lesson ? `${subject} | ${lesson}` : "";
-
-    // 🧩 Update attachments for the selected lesson
     const lessonId = li.getAttribute("data-lesson-id");
     if (lessonId) {
         updateAttachments(lessonId);
     }
-
     // ✅ Load and autoplay the selected video
     if (player && typeof player.loadVideoById === "function") {
         player.loadVideoById(ytId);
         try {
-            player.playVideo(); // 🔥 auto play
+            player.playVideo();
         } catch { }
     } else {
         START_ID = ytId;
     }
 
-    // ✅ ✅ ✅ ADDED: Smooth scroll + auto play focus
     const videoShell = document.getElementById("videoShell");
     if (videoShell) {
         const navbar = document.querySelector("nav.navbar");
@@ -222,7 +196,6 @@ document.addEventListener("click", function (e) {
             }
         }, 400);
     }
-    // ✅ ✅ ✅ END OF ADDED SECTION
 });
 
 document.addEventListener("keydown", function (e) {
@@ -235,7 +208,6 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
-// Set title for initial active lesson
 document.addEventListener("DOMContentLoaded", () => {
   const activeLi = document.querySelector(".lesson-item.active");
   if (activeLi) {
@@ -288,7 +260,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Load attachments for the initial active lesson
   const initialActive = document.querySelector(".lesson-item.active");
   if (initialActive) {
     const lessonId = initialActive.getAttribute("data-lesson-id");
@@ -299,13 +270,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// =============================
 // 🎬 YouTube-style Seek Bar Integration
-// =============================
 document.addEventListener("DOMContentLoaded", () => {
     const seekBar = document.getElementById("seekBar");
-
-    // প্রতি সেকেন্ডে progress update হবে
     setInterval(() => {
         if (player && typeof player.getDuration === "function") {
             const duration = player.getDuration();
@@ -317,8 +284,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }, 500); // প্রতি 0.5 সেকেন্ডে আপডেট
-
-    // ইউজার যখন বার টেনে নেয়
     seekBar.addEventListener("input", () => {
         if (player && typeof player.seekTo === "function") {
             const newTime = parseFloat(seekBar.value);
@@ -342,13 +307,9 @@ seekBar.addEventListener("mouseup", () => {
         wasPlaying = false;
     }
 });
-
-// Function to update attachments for a lesson
 function updateAttachments(lessonId) {
   const container = document.getElementById("attachments-container");
   if (!container) return;
-
-  // Show loading
   container.innerHTML =
     '<h5 class="mb-3">Course Materials</h5><p class="text-muted">Loading materials...</p>';
 
@@ -414,8 +375,6 @@ function updateAttachments(lessonId) {
       }
 
       container.innerHTML = html;
-
-      // Re-initialize the attachments viewer for the new elements
       if (typeof initializeImageViewer === "function") initializeImageViewer();
       if (typeof initializeDocumentViewer === "function")
         initializeDocumentViewer();

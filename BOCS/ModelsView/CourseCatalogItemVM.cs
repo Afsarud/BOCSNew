@@ -9,7 +9,7 @@ namespace BOCS.ModelsView
         public string? ThumbnailUrl { get; set; }
         public int DurationDays { get; set; }
         public int PriceBdt { get; set; }
-        public int NotificationCount { get; set; } = 0; // চাইলে দেখাবে
+        public int NotificationCount { get; set; } = 0;
         public CourseType CourseType { get; set; }
     }
 }

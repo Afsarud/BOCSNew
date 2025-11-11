@@ -16,7 +16,6 @@ namespace BOCS.ModelsView
         public string CourseTitle { get; set; } = "";
         public List<SubjectItemVM> Subjects { get; set; } = new();
     }
-
     public class SubjectCreateVM
     {
         public int CourseId { get; set; }
@@ -25,7 +24,6 @@ namespace BOCS.ModelsView
         public int SortOrder { get; set; } = 0;
         public bool IsPublished { get; set; } = true;
     }
-
     public class SubjectDeleteVM
     {
         public int CourseId { get; set; }

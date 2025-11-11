@@ -7,13 +7,11 @@ namespace BOCS.ModelsView
 {
     public class AdminEnrollmentCreateVM
     {
-        // readonly info
         public int CourseId { get; set; }
         public string CourseTitle { get; set; } = "";
         public int CoursePriceBdt { get; set; }
         public int CourseDurationDays { get; set; }
 
-        // যাকে এনরোল দিচ্ছে (ড্রপডাউন)
         [Display(Name = "Student"), Required]
         public string SelectedStudentId { get; set; } = "";
         public List<SelectListItem> StudentOptions { get; set; } = new();

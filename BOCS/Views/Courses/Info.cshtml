@@ -6,7 +6,6 @@
     var isEnrolled = (bool)ViewBag.isEnrolled;
     bool isAdmin = User.IsInRole("Admin");
     var idx = 0;
-    // initialId: Controller থেকে এলো (শুধু play-able হলে সেট করা)
     var initialId = Model.LatestYoutubeId
         ?? Model.Outlines.SelectMany(g => g.Items).FirstOrDefault()?.YoutubeId
         ?? "";
@@ -69,7 +68,6 @@
                         <div id="player"></div>
                         <div id="videoGuard" class="video-guard"></div>
                     </div>
-                <!-- YouTube-style progress bar -->
                 <input type="range" id="seekBar" value="0" min="0" step="0.1" class="form-range w-100">
                 <!-- Custom Controls -->
                 <div class="mt-2 d-flex flex-wrap gap-2 align-items-center">
@@ -121,28 +119,19 @@
 
 <input type="hidden" id="IS_ADMIN_FLAG" value="@(isAdmin ? "true" : "false")" />
 
-
-
 @section Scripts {
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="~/js/course-info.js" asp-append-version="true"></script>
-
     <link href="~/css/protect-course-info.css" rel="stylesheet" />
     <script src="~/js/protect-course-info.js" asp-append-version="true"></script>
-    <!-- প্লেয়ার যে আইডি দিয়ে শুরু করবে -->
     <script id="INITIAL_ID" type="application/json">
         @Html.Raw(JsonSerializer.Serialize(initialId))
     </script>
-    <!-- (প্রয়োজন হলে) লেসন আইডিগুলোর তালিকা -->
     <script id="LESSON_IDS_DATA" type="application/json">
         @Html.Raw(JsonSerializer.Serialize(Model.LessonIds ?? new List<string>()))
     </script>
-    <!-- প্লেয়ার/নেভিগেশন স্ক্রিপ্টগুলো -->
     <script src="~/js/course-info.bootstrap.js" asp-append-version="true"></script>
-    <!-- ক্লিক-গার্ড (CSP safe: external file) -->
     <script src="~/js/course-play-guard.js" asp-append-version="true"></script>
-
-    <!-- Attachments Viewer -->
     <script src="~/js/course-attachments-viewer.js" asp-append-version="true"></script>
 
     <!-- Image Viewer Modal -->
